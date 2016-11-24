@@ -1,4 +1,4 @@
-@import url(//fonts.googleapis.com/css?family=Raleway:400,700,900);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700,900);
 body {
 	font-family: "Raleway", sans-serif;
 }
@@ -80,8 +80,7 @@ a, a:hover {
 	color:#777;
 }
 .phone {
-	margin-top: 16px;
-	text-align: right;
+		text-align: right;
 }
 .phone span {
 	display: block;
@@ -89,7 +88,7 @@ a, a:hover {
 }
 .phone a {
 	color:#fc5a0a;
-	font-size: 42px ;
+	font-size: 31px ;
 	font-weight: 900;
 }
 p.title {
@@ -109,7 +108,7 @@ p.slogan {
 }
 .undertop {
 	margin-top: 0;
-	color:#777;
+	color:#FFF;
 }
 .navbar-wrapper {
 	background-color: #272d33;
@@ -134,7 +133,7 @@ p.slogan {
 	padding: 25px 0;
 }
 .slider {
-	margin-top: 35px;
+	margin-top: 90px;
 }
 .camera_pag {
 	bottom: 40px;
@@ -256,6 +255,7 @@ p.slogan {
     transition: all 0.25s ease 0s;
 }
 .img-block {
+	margin-bottom: 20px;
 	overflow: hidden;
 	position: relative;
 }
@@ -289,7 +289,7 @@ p.slogan {
 }
 .img-block .caption {
     position: absolute;
-    width: 60%;
+    width: 70%;
     z-index: 1;
     color: #fff;
     left: 26px;
@@ -304,4 +304,129 @@ p.slogan {
 .navbar-wrapper {
 	width: 100%;
 	z-index: 99;
+}
+.logo-top {
+	max-width: 200px;
+}
+.first img {
+ max-height: 620px;
+}
+.fcaption {
+	position: absolute;
+	top:37%;
+}
+.img-block p {
+	font-size: 20px;
+}
+.second {
+	background-repeat: no-repeat;
+	height: 300px;
+	background-image: url(../images/link.jpg);
+	background-size: cover;
+}
+.third {
+	background-position: left center;
+	background-repeat: no-repeat;
+	height: 300px;
+	background-image: url(../images/3.jpg);
+	background-size: cover;
+}
+.up {
+	position: fixed;
+}
+.up .fa {
+	margin-right: 10px;
+}
+.undertop {
+	font-weight: 900;
+}
+.camera-wrap {
+	float: none;
+	min-height: 350px;
+}
+.titlecont {
+	padding: 30px 0;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+	.topmenu li a {
+		font-size: 17px;
+	}
+}
+.toggle-mnu {
+  display: block;
+  width: 28px;
+  height: 28px;
+  margin-top: 14px;
+}
+
+.toggle-mnu span:after, .toggle-mnu span:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 9px;
+}
+
+.toggle-mnu span:after {
+  top: 18px;
+}
+
+.toggle-mnu span {
+  position: relative;
+  display: block;
+}
+
+.toggle-mnu span, .toggle-mnu span:after, .toggle-mnu span:before {
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  -webkit-transition: all 0.3s;
+          transition: all 0.3s;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border-radius: 2px;
+}
+
+.toggle-mnu.on span {
+  background-color: transparent;
+}
+
+.toggle-mnu.on span:before {
+  -webkit-transform: rotate(45deg) translate(-1px, 0px);
+      -ms-transform: rotate(45deg) translate(-1px, 0px);
+          transform: rotate(45deg) translate(-1px, 0px);
+}
+
+.toggle-mnu.on span:after {
+  -webkit-transform: rotate(-45deg) translate(6px, -7px);
+      -ms-transform: rotate(-45deg) translate(6px, -7px);
+          transform: rotate(-45deg) translate(6px, -7px);
+}
+
+.toggle-mnu {
+	float: left;
+	margin-top: 26px;
+	position: relative;
+	z-index: 2;
+}
+@media only screen and (min-width: 992px) {
+	.toggle-mnu {
+		display: none;
+	}
+	.toggle-mnu, #mobile-menu, html.mm-blocking #mm-blocker {
+		display: none;
+	}
+	html.mm-opening .mm-slideout {
+		-webkit-transform: translate(0px, 0px);
+		-ms-transform: translate(0px, 0px);
+		transform: translate(0px, 0px);
+	}
+}
+@media (max-width: 991px) {
+	.up {
+		position: relative;
+	}
+	.slider {
+		display: none;
+		margin-top: 10px;
+	}
 }
