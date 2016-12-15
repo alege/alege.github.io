@@ -5,49 +5,67 @@
 	<title>Stopaq</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale = 1.0">
-	<link rel="stylesheet" href="font-awesome/css/font-awesome.css">
-	<link rel="stylesheet" href="css/animate.css">
-	<link rel="stylesheet" href="css/hover.css">
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="css/camera.css">
-	<link rel="stylesheet" href="css/template.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/5.5.3/core/css/jquery.mmenu.all.css">
-	<script src="js/jquery-3.1.1.min.js"></script>
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<div class="navbar-wrapper up navbar-default">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-12 col-xs-12 hidden-md hidden-lg">
-					<a href="#mobile-menu" class="toggle-mnu"><span></span></a>
-					<div class="wrapis">
-						<img src="images/logo.png" alt="" class="isi">
-						<h3 class="his">Інженерні системи ізоляції</h3>
+	<div class="wrapper">
+		<div class="navbar-wrapper up" id="up">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 col-xs-12 hidden-md hidden-lg">
+						<nav id="mobile-menu">
+							<ul>
+								<li><a href="index.html">Головна</a></li>
+								<li><a href="#mm-2" data-target="mm-2">Матеріали</a>
+									<ul>
+										<li><a href="fn2100.html">Stopaq FN2100</a></li>
+										<li><a href="link-seal.html">Link-Seal</a></li>
+										<li><a href="thortex.html">Thortex</a></li>
+									</ul>
+								</li>
+								<li><a class="" href="#">Галерея</a></li>
+								<li><a class="" href="#footer">Контакти</a></li>
+							</ul>
+						</nav>
+						<div class="wrapis">
+							<a href="#mobile-menu" class="toggle-menu">					
+								<button class="hamburger hamburger--arrow" type="button" id="my-icon">
+									<span class="hamburger-box">
+										<span class="hamburger-inner"></span>
+									</span>
+								</button>
+							</a>
+							<img src="images/logo.png" alt="" class="isi">
+							<h3 class="his">Інженерні системи ізоляції</h3>
+						</div>
 					</div>
-				</div>
-				<div class="col-md-7 hidden-sm hidden-xs">
-					<nav>
-						<ul class="sf-menu topmenu">
-							<!--<img class="logo-top" src="images/logo.jpg" alt="">-->
-							<li><a class="hvr-underline-from-center" href="index.html">Головна</a></li>
-							<li><a class="hvr-underline-from-center" href="#">Матеріали</a></li>
-							<li><a class="hvr-underline-from-center" href="#">Галерея</a></li>
-							<li><a class="hvr-underline-from-center" href="#">Контакти</a></li>
-						</ul>
-					</nav>
-				</div>
-				<div class="col-md-5 hidden-sm hidden-xs">
-					<div class="phone">
-						<a href="callto:#"><i class="fa fa-phone" aria-hidden="true"></i>+38 (032) 251-33-38</a>
-						<p class="undertop">Адреса: 79038, 38, вул. Медової печери, м. Львів</p>
+					<div class="col-md-7 hidden-sm hidden-xs">
+						<nav>
+							<ul class="topmenu">
+								<li class="hvr-underline-from-center"><a  href="index.html">Головна</a></li>
+								<li class="have-children hvr-underline-from-center"><a class="" href="#">Матеріали</a>
+									<ul class="children">
+										<li class="hvr-underline-from-center"><a class="childrens" href="fn2100.html">Stopaq FN2100</a></li>
+										<li class="hvr-underline-from-center"><a class="childrens" href="link-seal.html">Link-Seal</a></li>
+										<li class="hvr-underline-from-center"><a class="childrens" href="thortex.html">Thortex</a></li>
+									</ul>
+								</li>
+								<li class="hvr-underline-from-center"><a class="" href="#">Галерея</a></li>
+								<li class="hvr-underline-from-center"><a class="" id="tofooter" href="#footer">Контакти</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="col-md-5 hidden-sm hidden-xs">
+						<div class="phone">
+							<a href="callto:#"><i class="fa fa-phone" aria-hidden="true"></i>+38 (032) 251-33-38</a>
+							<p class="undertop">Адреса: 79038, 38, вул. Медової печери, м. Львів</p>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<div class="clearfix"></div>
-	<div class="acontent">
-		<div class="container">
+		<div class="clearfix"></div>
+		<div class="container acontent">
 			<h3 class="atitle">LINK-SEAL®</h3>
 			<h4 class="astitle">Оригінальні   ущільнювачі кільцевих просторів Link-Seal для герметизації вводів труб</h4>
 			<article>
@@ -62,12 +80,15 @@
 				<b>Переваги:</b>
 				<ul>
 					<li>Міцні каучукові елементи гарантують довготривалий термін експлуатації виробу </li>
-					<li>Можливі виконання елементів з маслобензиностійких, вогнетривких, стійких до впливу               
-						розчинників і температур матеріалів</li>
-						<li>Захисне положення в стіні. Тип – в залежності від матеріалу труб </li>
-						<li>Можливість встановлення після прокладки труб </li>
-						<li>Простий та швидкий монтаж</li>
-						<li>Болтові з’єднання: </br>-оцинковані;</br>-високосортна сталь V4A</li>
+					<li>Можливі виконання елементів з маслобензиностійких, вогнетривких, стійких до впливу розчинників і температур матеріалів</li>
+					<li>Захисне положення в стіні. Тип – в залежності від матеріалу труб </li>
+					<li>Можливість встановлення після прокладки труб </li>
+					<li>Простий та швидкий монтаж</li>
+					<li>Болтові з’єднання:
+						<ul>
+							<li>-оцинковані</li>
+							<li>-високосортна сталь V4A</li>
+						</ul></li>
 						<li>Поглинання та компенсація ударних, шумових та вібраційних навантажень</li>
 						<li>Кольорові відмінності різних видів каучуку </li>
 						<li>Допомагає виконувати функцію катодного захисту труб </li>
@@ -76,7 +97,7 @@
 					<p style="text-align: center;"><iframe width="700" height="400" src="https://www.youtube.com/embed/hWMKCfPemf4" frameborder="0" allowfullscreen></iframe></p>
 				</article>
 			</div>
-			<footer>
+			<footer id="footer">
 				<section class="foot">
 					<div class="container footer">
 						<div class="row">
@@ -94,7 +115,7 @@
 								</address>
 							</div>
 							<div class="col-lg-6">
-								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.450338476829!2d-74.00264788458956!3d40.70810177933234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a3b552986db%3A0x6f8683854f87fc49!2zMjU5IEZyb250IFN0LCBOZXcgWW9yaywgTlkgMTAwMzgsINCh0L_QvtC70YPRh9C10L3RliDQqNGC0LDRgtC4INCQ0LzQtdGA0LjQutC4!5e0!3m2!1suk!2sua!4v1481203403762" width="600" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2574.0258227021027!2d24.080583315432428!3d49.823178440244035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ac2bacbec5acf%3A0x47a51f792ce943f2!2z0LLRg9C70LjRhtGPINCc0LXQtNC-0LLQvtGXINCf0LXRh9C10YDQuCwgMzgsINCb0YzQstGW0LIsINCb0YzQstGW0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjA!5e0!3m2!1suk!2sua!4v1481727255649" width="600" height="350" frameborder="0" style="border:0; max-width: 100%;" allowfullscreen></iframe>
 							</div>
 						</div>
 					</div>
@@ -104,3 +125,11 @@
 				</div>
 			</footer>
 		</div>
+		<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+		<script src="js/camera.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/5.5.3/core/js/jquery.mmenu.min.all.js"></script>
+		<script src="js/jquery.easing.1.3.js"></script>
+		<script src="js/jquery.ui.totop.min.js"></script>	
+		<script src="js/common.js"></script>
+	</body>
+	</html>
