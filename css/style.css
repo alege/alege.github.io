@@ -685,7 +685,7 @@ i.cap1:hover, i.cap2:hover {
 	}
 	.thortex {
 		float: none;
-		max-width: 500px;
+		max-width: 100%;
 		margin: 0 auto;
 		display: block; 
 		padding: 0;
