@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/material.css">
+	<style>
+		.grey {
+			color:grey;
+		}
+		.green {
+			color:green;
+		}
+		.blue {
+			color:blue;
+		}
+		.violet {
+			color:purple;
+		}
+		.red {
+			color:red;
+		}
+		body {
+			padding: 20px 40px;
+		}
+	</style>
+</head>
+<body>
+	<div id="demo">
+		<h3>Ваш уровень жизни <b>БЕЗ</b> талантов:</span></h3><input type="text" class="text-input" id="hp" placeholder="Уровень hp">
+		<h3>Выученные таланты: </h3>
+		<h4>Основной</h4>
+		<select name="" id="firstTalent">
+			<option class="grey" value="20">Серый +20хп</option>
+			<option class="green" value="40">Зеленый +40хп</option>
+			<option class="blue" value="60">Синий +60хп</option>
+			<option class="violet" value="80">Фиолетовый +80хп</option>
+			<option class="red" value="100">Красный +100хп</option>
+			<option class="grey" value="0.02">Серый +2% хила</option>
+			<option class="green" value="0.04">Зеленый +4% хила</option>
+			<option class="blue" value="0.06">Синий +6% хила</option>
+			<option class="violet" value="0.08">Фиолетовый +8% хила </option>
+			<option class="red" value="0.1">Красный +10% хила</option>
+		</select> 
+		<h4>Вторичный:</h4>
+		<select name="" id="secondTalent">
+			<option class="grey" value="20">Серый +20хп</option>
+			<option class="green" value="40">Зеленый +40хп</option>
+			<option class="blue" value="60">Синий +60хп</option>
+			<option class="violet" value="80">Фиолетовый +80хп</option>
+			<option class="red" value="100">Красный +100хп</option>	
+			<option class="grey" value="0.02">Серый +2% хила</option>
+			<option class="green" value="0.04">Зеленый +4% хила</option>
+			<option class="blue" value="0.06">Синий +6% хила</option>
+			<option class="violet" value="0.08">Фиолетовый +8% хила </option>
+			<option class="red" value="0.1">Красный +10% хила</option>
+		</select>
+		<h3>Эликсир гиганта:</h3>
+		<select name="" id="elixirs">
+			<option class="violet" value="0.5">Великий эликсир гиганта</option>
+			<option class="red" value="0.69">Премиальный эликсир гиганта</option>
+		</select>
+		<h3>Эликсиры жизни:</h3>
+		<select name="" id="elixirsLife">
+			<option class="violet" value="0.5">Великий эликсир жизни</option>
+			<option class="red" value="0.56">Подземный эликсир жизни</option>
+			<option class="red" value="0.65">Премиальный эликсир жизни</option>
+		</select><br><br>
+		<button onclick="result()" class="button raised">Рассчитать</button>
+		<h4>Уровень жизни после активации талантов: <span id="hpResult"></span></h4>
+		<h4>Уровень жизни с эликсиром гиганта: <span id="hpGig"></span></h4>
+		<h4>Полученное лечение от эликсира жизни: <span id="hpLife"></span></h4>
+		<h4>Доролнительное здоровье под эликсиром гиганта за счет талантов: <span id="addedHp"></span></h4>
+		<h4>Дополнительное лечение от эликсира жизни за счет талантов: <span id="addedLife"></span></h4>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+</html>
