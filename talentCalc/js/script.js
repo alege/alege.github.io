@@ -28,7 +28,7 @@ $('#block-2 label, #block-4 label').html('Талант за кодекс "Жиз
 function result(firstId,secondId,recepient) {
 	var startHp = Number($('#hp').val());
 	if(startHp<1) {
-		alert('Введите ваш уровень здоровья вверху страницы!')
+		Materialize.toast('Введите ваш уровень здоровья вверху страницы!', 4000);
 	} else {
 		var elixirGig = Number($('#giants').val()),
 		elixirLife = Number($('#lifes').val()),
