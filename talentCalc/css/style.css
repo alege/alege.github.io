@@ -1,0 +1,38 @@
+.switch-before {
+	display: inline-block;
+	line-height: 38px;
+}
+.switch {
+	float: right;
+	margin-top: 20px;
+}
+@media (max-width: 1100px) {
+	.container {
+		width: 90%;
+	}
+}
+@media (min-width: 1101px) {
+	.container {
+		width: 85%;
+	}
+}
+@media (min-width: 1302px) {
+	.container {
+		width: 70%;
+	}
+}
+.bordered {
+	border-right: 1px solid #e0e0e0;
+	border-left: 1px solid #e0e0e0;
+}
+#demo-1, #demo-2 {
+	text-align: left;
+	padding: 15px 0 0 10px;
+}
+.iyozzh {
+	text-align: center;
+}
+.iyozzh img {
+	margin-top: 40px;
+	height: 500px;
+}

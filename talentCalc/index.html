@@ -1,78 +1,139 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk-RU">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
-	<link rel="stylesheet" href="css/material.css">
-	<style>
-		.grey {
-			color:grey;
-		}
-		.green {
-			color:green;
-		}
-		.blue {
-			color:blue;
-		}
-		.violet {
-			color:purple;
-		}
-		.red {
-			color:red;
-		}
-		body {
-			padding: 20px 40px;
-		}
-	</style>
+	<title>Калькулятор талантов</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/materialize.css">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<div id="demo">
-		<h3>Ваш уровень жизни <b>БЕЗ</b> талантов:</span></h3><input type="text" class="text-input" id="hp" placeholder="Уровень hp">
-		<h3>Выученные таланты: </h3>
-		<h4>Основной</h4>
-		<select name="" id="firstTalent">
-			<option class="grey" value="20">Серый +20хп</option>
-			<option class="green" value="40">Зеленый +40хп</option>
-			<option class="blue" value="60">Синий +60хп</option>
-			<option class="violet" value="80">Фиолетовый +80хп</option>
-			<option class="red" value="100">Красный +100хп</option>
-			<option class="grey" value="0.02">Серый +2% хила</option>
-			<option class="green" value="0.04">Зеленый +4% хила</option>
-			<option class="blue" value="0.06">Синий +6% хила</option>
-			<option class="violet" value="0.08">Фиолетовый +8% хила </option>
-			<option class="red" value="0.1">Красный +10% хила</option>
-		</select> 
-		<h4>Вторичный:</h4>
-		<select name="" id="secondTalent">
-			<option class="grey" value="20">Серый +20хп</option>
-			<option class="green" value="40">Зеленый +40хп</option>
-			<option class="blue" value="60">Синий +60хп</option>
-			<option class="violet" value="80">Фиолетовый +80хп</option>
-			<option class="red" value="100">Красный +100хп</option>	
-			<option class="grey" value="0.02">Серый +2% хила</option>
-			<option class="green" value="0.04">Зеленый +4% хила</option>
-			<option class="blue" value="0.06">Синий +6% хила</option>
-			<option class="violet" value="0.08">Фиолетовый +8% хила </option>
-			<option class="red" value="0.1">Красный +10% хила</option>
-		</select>
-		<h3>Эликсир гиганта:</h3>
-		<select name="" id="elixirs">
-			<option class="violet" value="0.5">Великий эликсир гиганта</option>
-			<option class="red" value="0.69">Премиальный эликсир гиганта</option>
-		</select>
-		<h3>Эликсиры жизни:</h3>
-		<select name="" id="elixirsLife">
-			<option class="violet" value="0.5">Великий эликсир жизни</option>
-			<option class="red" value="0.56">Подземный эликсир жизни</option>
-			<option class="red" value="0.65">Премиальный эликсир жизни</option>
-		</select><br><br>
-		<button onclick="result()" class="button raised">Рассчитать</button>
-		<h4>Уровень жизни после активации талантов: <span id="hpResult"></span></h4>
-		<h4>Уровень жизни с эликсиром гиганта: <span id="hpGig"></span></h4>
-		<h4>Полученное лечение от эликсира жизни: <span id="hpLife"></span></h4>
-		<h4>Доролнительное здоровье под эликсиром гиганта за счет талантов: <span id="addedHp"></span></h4>
-		<h4>Дополнительное лечение от эликсира жизни за счет талантов: <span id="addedLife"></span></h4>
+	<nav>
+		<div class="nav-wrapper  grey lighten-3 center-align">
+			<a href="#" class="flow-text black-text">Dwar talent calc</a>
+		</div>
+	</nav><br>
+	<h4 class="center-align">Базовые характеристики</h4><br>
+	<div class="divider"></div>
+	<div class="container">
+		<div class="row">
+			<div class="input-field col s12 m12 l6">
+				<input id="hp" type="number" class="validate">
+				<label for="hp" data-error="Не правильно" data-success="Отлично">Введите ваш уровень здоровья без активных талантов.</label>
+			</div>
+			<div class="col s12 m12 l6">
+				<h5 class="switch-before">Я "военный эксперт" и выше</h5>
+				<div class="switch">
+					<label>
+						Нет
+						<input type="checkbox" name="honourSwitch" checked>
+						<span class="lever"></span>
+						Да
+					</label>
+				</div><br>
+				<div class="divider grey"></div><br>
+			</div>
+			<div class="input-field col s12 m12 l6">
+				<select id="giants">
+					<option value="1.35" selected data-icon="http://dwar.ru/images/data/artifacts/maxhp1-gray.gif" class="left circle">Малый эликсир гиганта</option>
+					<option value="1.4" data-icon="http://dwar.ru/images/data/artifacts/maxhp2-green.gif" class="left circle">Эликсир гиганта</option>
+					<option value="1.45" data-icon="http://dwar.ru/images/data/artifacts/maxhp2-blue.gif" class="left circle">Большой эликсир гиганта</option>
+					<option value="1.5" data-icon="http://dwar.ru/images/data/artifacts/maxhp3-purp.gif" class="left circle">Великий эликсир гиганта</option>
+					<option value="1.55" data-icon="https://w1.dwar.ru/images/data/artifacts/maxhp3_purp.gif" class="left circle">Абсолютный эликсир гиганта</option>
+					<option value="1.6" data-icon="http://dwar.ru/images/data/artifacts/maxhp3_podzem.gif" class="left circle">Подземный эликсир гиганта</option>
+					<option value="1.69" data-icon="https://w2.dwar.ru/images/data/artifacts/prem_red_gig.gif" class="left circle">Премиальный эликсир гиганта</option>
+				</select>
+				<label>Выберите эликсир гиганта</label>
+			</div>
+			<div class="input-field col s12 m12 l6">
+				<select id="lifes">
+					<option value="0.35" selected data-icon="https://w2.dwar.ru/images/data/artifacts/life1-gray.gif" class="left circle">Малый эликсир жизни</option>
+					<option value="0.4" data-icon="https://w2.dwar.ru/images/data/artifacts/life2-green.gif" class="left circle">Эликсир жизни</option>
+					<option value="0.45" data-icon="https://w2.dwar.ru/images/data/artifacts/life2-blue.gif" class="left circle">Большой эликсир жизни</option>
+					<option value="0.5" data-icon="https://w1.dwar.ru/images/data/artifacts/life3-purple.gif" class="left circle">Великий эликсир жизни</option>
+					<option value="0.54" data-icon="https://w1.dwar.ru/images/data/artifacts/life3_red.gif" class="left circle">Абсолютный эликсир жизни</option>
+					<option value="0.56" data-icon="https://w1.dwar.ru/images/data/artifacts/life3_podzem.gif" class="left circle">Подземный эликсир жизни</option>
+					<option value="0.65" data-icon="https://w1.dwar.ru/images/data/artifacts/prem_red_life.gif" class="left circle">Премиальный эликсир жизни</option>
+				</select>
+				<label>Выберите эликсир жизни</label>
+			</div>
+			<div class="col s12"><br>
+				<div class="divider"></div><br>
+			</div>
+			<div class="col s6">
+				<h5 id="countElixirs" style="font-size: 1.5rem;"></h5>
+			</div>
+			<div class="col s6">
+				<form action="#">
+					<p class="range-field">
+						<input type="range" id="test5" min="1" max="10" value="4" oninput="showVal(this.value)" onchange="showVal(this.value)" />
+					</p>
+				</form>
+			</div>
+			<div class="col s12"><br>
+				<div class="divider"></div><br>
+			</div>
+			<div class="col s12">
+				<h4 class="center-align">Сравнение эффективности талантов</h4><br>
+				<div class="divider"></div>
+				<div class="col l6 bordered center">
+					<h5 class="center-align">Первый вариант изучения</h5>
+					<div class="honour-wrapper">
+						<div class="input-field col s12" id="block-1">
+							<select>
+								<optgroup label="Уровень жизни">
+									<option value="20" data-icon="http://dwar.ru/images/data/artifacts/talant_gray_hp.gif" class="left circle">Увеличивает Живучесть на 20</option>
+									<option value="40" data-icon="http://dwar.ru/images/data/artifacts/talant_green_hp.gif" class="left circle">Увеличивает Живучесть на 40</option>
+									<option value="60" data-icon="http://dwar.ru/images/data/artifacts/talant_blue_hp.gif" class="left circle">Увеличивает Живучесть на 60</option>
+									<option value="80" data-icon="http://dwar.ru/images/data/artifacts/talant_violet_hp.gif" class="left circle">Увеличивает Живучесть на 80</option>
+									<option value="100" data-icon="http://dwar.ru/images/data/artifacts/talant_red_hp.gif" class="left circle">Увеличивает Живучесть на 100</option>
+								</optgroup>
+								<optgroup label="Дополнительное лечение">
+									<option value="1.02" data-icon="http://dwar.ru/images/data/artifacts/talant_gray_elx.gif" class="left circle">+ 2% восстанавливаемого здоровья (х1.02)</option>
+									<option value="1.04" data-icon="http://dwar.ru/images/data/artifacts/talant_green_elx.gif" class="left circle">+ 4% восстанавливаемого здоровья (х1.04)</option>
+									<option value="1.06" data-icon="http://dwar.ru/images/data/artifacts/talant_blue_elx.gif" class="left circle">+ 6% восстанавливаемого здоровья (х1.06)</option>
+									<option value="1.08" data-icon="http://dwar.ru/images/data/artifacts/talant_violet_elx.gif" class="left circle">+ 8% восстанавливаемого здоровья (х1.08)</option>
+									<option value="1.1" data-icon="http://dwar.ru/images/data/artifacts/talant_red_elx.gif" class="left circle">+ 10% восстанавливаемого здоровья (х1.1)</option>
+								</optgroup>
+							</select>
+							<label>Талант за доблесть</label>
+						</div>
+					</div>
+					<div class="input-field col s12" id="block-2">
+					</div>
+					<div class="clearfix">					
+						<button class="btn waves-effect waves-light" type="submit" name="action" onclick="result('#block-1 select','#block-2 select','#demo-1')">Рассчитать
+							<i class="material-icons right">send</i>
+						</button>
+					</div>
+					<div id="demo-1">
+					</div>
+				</div>
+				<div class="col l6 bordered center">
+					<h5 class="center-align">Второй вариант изучения</h5>
+					<div class="honour-wrapper">
+						<div class="input-field col s12" id="block-3">
+						</div>
+					</div>
+					<div class="input-field col s12" id="block-4">
+					</div>
+					<div class="clearfix">					
+						<button class="btn waves-effect waves-light" type="submit" name="action" onclick="result('#block-3 select','#block-4 select','#demo-2')">Рассчитать
+							<i class="material-icons right">send</i>
+						</button>
+					</div>
+					<div id="demo-2"></div>
+				</div>
+			</div>
+			<div class="iyozzh clearfix">
+				<img style="display: none" src="https://pp.vk.me/c7001/v7001422/2e495/TztEQxgBjGY.jpg" alt="">
+			</div>
+		</div>
 	</div>
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="js/materialize.js"></script>
 	<script src="js/script.js"></script>
 </body>
 </html>
