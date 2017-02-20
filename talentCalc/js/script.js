@@ -61,6 +61,6 @@ function result(firstId,secondId,recepient) {
 			"<br>Бонусное лечение от 1 эликсира (за счет талантов): "+bonusHealing+
 			"<br><b>Суммарный бонус при использовании всех слотов: "+allSlotsBonus+"</b>"
 			);
-		$('.iyozzh>img').show();
+		// $('.iyozzh>img').show();
 	}
 };
