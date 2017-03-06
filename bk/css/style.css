@@ -214,6 +214,35 @@ header {
 	background-color: #e55c0f;
 	color: #fff;
 }
+.services-wrap {
+	text-align: center;
+	padding: 3rem 1rem;
+}
+.services h2, .services h4 {
+	font-weight: 400;
+}
+.services h4 {
+	font-size: 1.4rem;
+}
+.services a {
+	display: block;
+	color: rgba(0,0,0,.9);
+	transition: background-color .5s, color .2s;
+}
+.services p {
+	line-height: 1.25;
+	color: #f27935;
+}
+.services a:hover {
+	background-color: #f27935;
+	color: #fff;
+	transition: background-color .5s, color .2s;
+}
+.services a:hover .services-wrap p {
+	color: #fff;
+	transition: color .2s;
+}
+
 /* Extra small media */
 @media (max-width: 575px) {
 	body {
@@ -238,6 +267,9 @@ header {
 	}
 	.carousel-caption h3 {
 		font-size: 1.4rem;
+	}
+	.services-wrap {
+		padding: 1.5rem 1rem;
 	}
 }
 /* Small media  (sm)*/
