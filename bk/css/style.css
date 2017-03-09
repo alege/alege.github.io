@@ -140,6 +140,9 @@ body {
 	background: #f2f2f2;
 	padding: 50px;
 }
+h2 {
+	font-weight: 400;
+}
 .wrapper {
 	background-color: #fff;
 	max-width: 1440px;
@@ -218,7 +221,7 @@ header {
 	text-align: center;
 	padding: 3rem 1rem;
 }
-.services h2, .services h4 {
+.services h4 {
 	font-weight: 400;
 }
 .services h4 {
@@ -242,6 +245,48 @@ header {
 	color: #fff;
 	transition: color .2s;
 }
+.sup-img {
+	height: 320px;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+}
+.sup-1 {
+	background-image: url(../img/ZR8.JPG);
+}
+.sup-2 {
+	background-image: url(../img/ZRkam-r9.jpg);
+}
+.sup-3 {
+	background-image: url(../img/ZRbet-m1.JPG);
+}
+.sup-4 {
+	background-image: url(../img/EOF6.jpg);
+}
+.sup-5 {
+	background-image: url(../img/OR14.jpg);
+}
+.sup-build .col-lg-4, .sup-build .col-lg-6 {
+	padding: 2px;
+}
+.sup-caption {
+	font-weight: 300;
+	font-size: 1.8rem;
+	background: rgba(242, 121, 53, 0.6);
+	color: #fff;
+	width: 100%;
+	padding: 2px 0 7px;
+}
+
+
 
 /* Extra small media */
 @media (max-width: 575px) {
