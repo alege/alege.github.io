@@ -1,0 +1,377 @@
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.item-1 {
+  background-image: url("../img/slide1.jpg");
+}
+
+.item-2 {
+  background-image: url("../img/slide5.png");
+}
+
+.item-3 {
+  background-image: url("../img/slide4.png");
+}
+
+.item-4 {
+  background-image: url("../img/slide6.png");
+}
+
+.img-metal_construction {
+  background-image: url("../img/VM10.jpg");
+}
+
+.img-metal_montage {
+  background-image: url("../img/MM10.jpg");
+}
+
+.img-metal_preparation {
+  background-image: url("../img/PPMV6.jpg");
+}
+
+.img-ground {
+  background-image: url("../img/ZR8.JPG");
+}
+
+.img-stone {
+  background-image: url("../img/ZRkam-r9.jpg");
+}
+
+.img-monolit {
+  background-image: url("../img/ZRbet-m1.JPG");
+}
+
+.img-energo {
+  background-image: url("../img/EOF6.jpg");
+}
+
+.img-facing {
+  background-image: url("../img/OR14.jpg");
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover, a:active, a:focus, a:visited {
+  text-decoration: none;
+}
+
+body {
+  min-width: 320px;
+}
+
+h2 {
+  font-weight: 400;
+}
+
+header {
+  padding: 10px 0;
+}
+
+@media (max-width: 575px) {
+  .navbar {
+    padding: .5rem 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .navbar-brand {
+    max-width: 78%;
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .navbar-brand {
+    width: 42%;
+  }
+}
+
+.navbar-toggler {
+  right: 0;
+  top: 1.5rem;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .navbar-toggler {
+    right: 1.5rem;
+  }
+}
+
+.navbar-toggleable-md .navbar-collapse {
+  width: auto;
+}
+
+.slider {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.carousel-item {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 550px;
+}
+
+@media (max-width: 575px) {
+  .carousel-item {
+    height: 320px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .carousel-item {
+    height: 350px;
+  }
+}
+
+.carousel-caption {
+  text-align: left;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 44%;
+  bottom: 15%;
+  left: 15%;
+  padding: 40px;
+  animation: fadeInUp 400ms linear 50ms both;
+}
+
+@media (max-width: 575px) {
+  .carousel-caption {
+    text-align: center;
+    width: 70%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .carousel-caption {
+    text-align: center;
+    width: 70%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .carousel-caption {
+    width: 70%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .carousel-caption {
+    width: 60%;
+  }
+}
+
+.carousel-caption h3 {
+  animation: fadeInDown 300ms linear 550ms both;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 575px) {
+  .carousel-caption h3 {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .carousel-caption h3 {
+    font-size: 1.4rem;
+  }
+}
+
+.carousel-caption p {
+  animation: fadeInDown 300ms linear 750ms both;
+  line-height: 1.25;
+  margin: 0;
+}
+
+.carousel-control-prev {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.3), transparent);
+}
+
+.carousel-control-next {
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.3), transparent);
+}
+
+.carousel-control-next, .carousel-control-prev {
+  opacity: .7;
+  transition: opacity 0.3s;
+}
+
+.btn-more {
+  animation: fadeInUp 300ms linear 1s both;
+  position: absolute;
+  bottom: -19px;
+  border-radius: 0;
+  font-family: sans-serif;
+  color: #fff;
+  background-color: #f27935;
+}
+
+@media (max-width: 575px) {
+  .btn-more {
+    position: relative;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .btn-more {
+    position: relative;
+  }
+}
+
+.btn-more:hover {
+  background: #e55c0f;
+  color: #fff;
+}
+
+.services-wrap {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+@media (max-width: 575px) {
+  .services-wrap {
+    padding: 1.5rem 1rem;
+  }
+}
+
+.services h4 {
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+
+.services a {
+  display: block;
+  color: rgba(0, 0, 0, 0.9);
+  transition: background-color 0.5s, color 0.2s;
+}
+
+.services a:hover {
+  background-color: #f27935;
+  color: #fff;
+  transition: background-color 0.5s, color 0.2s;
+}
+
+.services a:hover .services-wrap p {
+  color: #fff;
+  transition: color 0.2s, ;
+}
+
+.services p {
+  line-height: 1.25;
+  color: #f27935;
+}
+
+.sup-img {
+  height: 320px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sup-build .col-lg-4, .sup-build .col-lg-6 {
+  padding: 2px;
+}
+
+.sup-caption {
+  line-height: 1;
+  font-weight: 300;
+  font-size: 1.8rem;
+  background-color: rgba(242, 121, 53, 0.6);
+  color: #fff;
+  width: 100%;
+  padding: 2px 0 7px;
+}
+
+.bgheader {
+  margin: 0 auto;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 40px;
+  max-width: 1600px;
+}
+
+.bgheader h3 {
+  color: #fff;
+}
+
+.bgheader p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.services-bgheader {
+  background-image: url("../img/service-subheader.jpg");
+}
+
+.service-title {
+  padding: 10px 0 15px;
+  border-bottom: 3px solid #f2f2f2;
+  position: relative;
+}
+
+.service-title:after {
+  content: "";
+  border-bottom: 3px solid #f9bf3b;
+  width: 12%;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+}
+
+.title_supp {
+  border-bottom: 3px solid lightgrey;
+}
+
+.title_supp:after {
+  border-bottom: 3px solid #26c281;
+  width: 45%;
+}
+
+.blocknumber {
+  margin-top: 20px;
+}
+
+.blocknumber span {
+  display: inline-block;
+  width: 48px;
+  line-height: 48px;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+}
+
+.blocknumber a {
+  color: #f27935;
+  margin-left: 20px;
+  font-size: 18px;
+}
+
+.blocknumber a:hover {
+  color: #e55c0f;
+}
