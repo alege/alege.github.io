@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <title>about_bk-plus</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <nav class="navbar navbar-toggleable-md navbar-light justify-content-between">
+        <a class="navbar-brand align-self-start" href="#">
+          <img class="img-fluid logo" src="img/logo.png" alt="Будкомплект плюс">
+        </a>
+        <button class="navbar-toggler navbar-toggler-right align-self-center" id="btn" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Головна <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Про нас</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Послуги</a>
+            </li>
+            <li class="nav-item">
+              <a href="gallery.html" class="nav-link">Галерея об'єктів</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Контакти</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="bgheader contacts-bgheader">
+      <div class="container">
+        <h3>Про нас</h3>
+        <p>Декілька слів про нашу компанію</p>
+      </div>
+    </div>
+    <div class="container pt-5 pb-5">
+      <div class="row">
+        <div class="col-lg-6">
+          <h2 class="mb-3">Про компанію</h2>
+          <p>Наше підприємство з 2017 року, залучивши фахівців Львівського СУ-248 тресту Укрмонтажхімзахист розширює свою діяльність в наданні послуг з очищення та захисту металоконструкцій, залізобетонних та цегляних споруд, резервуарів, кранів, трубопроводів та ін.</p>
+          <p>Керівник даного підрозділу Кіндзер Михайло Володимирович, колишній головний інженер Львівського СУ-248.</p>
+          <p>Виконанню робіт передує обстеження та виготовлення необхідної проектної документації фахівцями інституту «Гірхімпром».</p>
+          <p>Замовниками робіт, які були виконані фахівцями Львівського СУ-248, відносяться добре знані в нашому регіоні підприємства, а саме:</p>
+          <ul>
+            <li>Дрогобицький нафтопереробний завод;</li>
+            <li>Долинський нафтопереробний завод;</li>
+            <li>ВО «Кінескоп»;</li>
+            <li>Львівська база нафтопродуктів.</li>
+          </ul>
+        </div>
+        <div class="col-lg-6">
+          <h2>Дозвільна документація</h2>
+          {{certification-gallery}}
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="container pt-5 pb-4">
+      <div class="row">
+        <div class="col-sm-6 hidden-xs-down">
+          <h4>Компанія</h4>
+          <ul class="footer-company">
+            <li><a href="#">Про нас</a></li>
+            <li><a href="services.html">Перелік послуг</a></li>
+            <li><a href="gallery.html">Завершені об'єкти</a></li>
+            <li><a href="contacts.html">Контакти</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-6">
+          <h4>Зворотній зв'язок</h4>
+          <p>Якщо Вас цікавить вартість послуг та співпраця з нами, залиште свої дані на <a style="text-decoration: underline;" href="contacts.html"><b>сторінці контактів</b></a> або телефонуйте за номером:</p>
+          <h5>+38 (032) 1488 228</h5>
+        </div>
+      </div>
+    </div>
+    <div class="copyright pt-3 pb-3">
+      <div class="container">
+        © <span id="year"></span> Будкомплект Плюс
+      </div>
+    </div>
+  </footer>
+  <script src="js/libs.min.js"></script>
+  <script src="js/script.min.js"></script>
+</body>
+
+</html>
