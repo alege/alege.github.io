@@ -121,7 +121,7 @@ a {
 }
 
 .content-wrap {
-  width: 1400px;
+  max-width: 1400px;
   margin: 0 auto;
   position: relative;
 }
@@ -331,6 +331,7 @@ a {
 .bg-hero {
   background-image: url(../img/bg-1.jpg);
   background-repeat: no-repeat;
+  background-position: center;
   height: 793px;
   position: absolute;
   top: -136px;
@@ -382,8 +383,8 @@ a {
 
 .info-2 .guy {
   position: absolute;
-  left: 112px;
-  bottom: 0px;
+  left: 100px;
+  bottom: -94px;
   z-index: 1;
 }
 
