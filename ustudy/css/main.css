@@ -408,9 +408,15 @@ a {
 }
 
 .info-2 li {
+  color: #0f4ed0;
   font-size: 18px;
   font-weight: 500;
   line-height: 30px;
+}
+
+.info-2 li span {
+  color: #262626;
+  display: block;
 }
 
 .info-2 .ustudy-info {
