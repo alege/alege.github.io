@@ -4125,7 +4125,6 @@ select, input, textarea {
   }
   .header__rightblock {
     margin-left: auto;
-    margin-right: 30px;
   }
   .header__menu_short {
     margin-left: 50px;
@@ -4351,9 +4350,86 @@ select, input, textarea {
   .header>.container, .actionblock>.container {
     padding: 0 30px;
   }
+  .footer__top {
+    flex-wrap: wrap; }
+  .footer__logoblock {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+  .footer .afterlogo {
+    width: 100%;
+    margin-left: 0;
+    padding-left: 0;
+    font-size: 16.5px;
+    margin-top: 20px; }
+  .footer .afterlogo:before {
+    display: none; }
+  .footer__menu {
+    margin-top: 28px;
+    width: 100%;
+    border-top: 1px solid #e6e7e9;
+    border-bottom: 1px solid #e6e7e9;
+    padding-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 32px; }
+  .footer__menu .menu__column {
+    width: 50%;
+    margin-left: 0;
+    padding-right: 20px;
+    box-sizing: border-box; }
+  .footer__bottom {
+    margin-top: 25px;
+    flex-wrap: wrap; }
+  .footer__certificate {
+    max-width: 100%;
+    width: 100%;
+    margin-right: 0;
+    margin-top: 0;
+    padding-right: 2px;
+    font-size: 14px; }
+  .footer__mail {
+    margin-top: 24px; }
+  .footer__certificate br {
+    display: none; }
+  .footer__links {
+    width: 100%;
+    margin-top: 21px;
+    display: flex; }
+  .footer__links li {
+    width: 50%;
+    margin-left: 0;
+    padding-right: 20px;
+    box-sizing: border-box;
+    font-size: 14px;
+    line-height: 1.6em; }
+  .footer__copyright {
+    max-width: 100%;
+    margin-top: 24px;
+    font-size: 14px; }
+  .footer__bottom-left {
+    width: 100%; }
+  .footer__bottom-right {
+    width: 100%;
+    margin-top: 30px; }
+  .reviews__cards.stripes .reviews__cardimage, .reviews__cards.stripes .reviews__img_shop_link {
+    width: 210px;
+  }
 }
 
 @media (max-width: 768px) {
+  .reviews__cards.stripes .reviews__cardimage, .reviews__cards.stripes .reviews__img_shop_link {
+    width: 130px;
+  }
+  .reviews__cards.stripes .reviews__cardinfo {
+    padding: 38px 13px;
+  }
+  .reviews__cards.stripes .reviews__name {
+    font-size: 22px;
+  }
+  .reviews__cards.stripes .reviews__text {
+    margin-top: 10px;
+  }
   .reviews__card {
     width: 100%;
   }
@@ -4366,9 +4442,6 @@ select, input, textarea {
   .section_footer .container {
     width: 100%;
     padding: 0 22px;
-  }
-  .reviews__cards.stripes .reviews__cardimage, .reviews__cards.stripes .reviews__img_shop_link {
-    width: 210px;
   }
   .actionblock {
     padding: 20px 0;
@@ -4398,6 +4471,18 @@ select, input, textarea {
   .actionblock__icon_like, .actionblock__icon_notification {
     display: none;
   }
+  .actions.active .actionblock__watchreview .text, .actions.active .actionblock__writereview.site_login_call .text {
+    display: none;
+  }
+  .actions.active .actionblock__writereview {
+    margin-left: 0;
+  }
+  .actionblock__watchreview:after {
+    content: none;
+  }
+  .actionblock__writereview.site_login_call {
+    margin-left: 0;
+  }
   .reviews {
     margin-top: -26px;
   }
@@ -4409,6 +4494,8 @@ select, input, textarea {
   }
   .searchblock__leftside {
     width: 100%;
+    justify-content: flex-start;
+    padding-left: 15px;
   }
   .searchblock__rightside {
     display: none;
@@ -4418,9 +4505,6 @@ select, input, textarea {
   }
   .searchblock__menu {
     margin-left: 20px;
-  }
-  .searchblock__leftside {
-    justify-content: flex-start;
   }
   .searchblock__icon_plus {
     display: none;
@@ -4439,14 +4523,47 @@ select, input, textarea {
     margin: 10px;
   }
   .footer__mail {
-    width: 100%;
-  }
+    width: 100%; }
   .footer__copyright {
     width: 100%;
-    margin-left: 0;
-  }
+    margin-left: 0; }
   .searchblock__menu_magazine .searchblock__submenu {
     left: -160px;
+  }
+}
+
+@media (max-width: 540px) {
+  .actionblock__watchreview .text {
+    display: none;
+  }
+  .actionblock__writereview.site_login_call {
+    margin-left: -10px;
+  }
+  .searchblock__menu.searchblock__menu_author {
+    display: none;
+  }
+  .header__mail {
+    font-size: 14px;
+  }
+  .header__adults {
+    margin-left: 5px;
+    font-size: 15px;
+  }
+  .actions.active .actionblock__watchreview {
+    padding-right: 45px;
+    padding-left: 0;
+  }
+  .actionblock__icon.actionblock__icon_search {
+    margin-left: 0;
+  }
+  .actionblock__icon.actionblock__icon_filter {
+    margin-left: 15px;
+  }
+  .searchblock__form .wf2_isBlank {
+    max-width: 90%;
+  }
+  .header>.container, .actionblock .container {
+    padding: 0 15px;
   }
 }
 /*# sourceMappingURL=default.css.map */
