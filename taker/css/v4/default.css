@@ -4329,6 +4329,28 @@ select, input, textarea {
     justify-content: space-between;
     width: 60%;
   }
+  .header.active .header__text {
+    display: none;
+  }
+  .header.active .container {
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .header.active .header__rightblock {
+    display: none;
+  }
+  .header.active .header__menu_full {
+    display: flex;
+    flex-basis: 77%;
+    margin-left: 35px;
+    flex-grow: 0;
+  }
+  .header.active .menu__column {
+    margin-left: 35px;
+  }
+  .header>.container, .actionblock>.container {
+    padding: 0 30px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -4348,16 +4370,83 @@ select, input, textarea {
   .reviews__cards.stripes .reviews__cardimage, .reviews__cards.stripes .reviews__img_shop_link {
     width: 210px;
   }
-}
-
-@media (max-width: 645px) {
+  .actionblock {
+    padding: 20px 0;
+  }
+  .actionblock__icon_plus, .actions.active .actionblock__icon, .actionblock__icon {
+    width: 30px;
+    height: 30px;
+  }
+  .actionblock__writereview {
+    height: 30px;
+  }
+  .actionblock__watchreview, .actionblock__writereview.site_login_call {
+    font-size: 16px;
+  }
+  .actions.active .actionblock__writereview {
+    line-height: initial;
+  }
+  .actions.active .actionblock__icon_search, .actions.active .actionblock__icon_filter {
+    width: auto;
+    height: auto;
+  }
+  .actionblock__username {
+    max-width: 36px;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .actionblock__icon_like, .actionblock__icon_notification {
+    display: none;
+  }
+  .reviews {
+    margin-top: -26px;
+  }
+  .searchblock {
+    padding: 20px 0;
+  }
+  .searchblock__form {
+    padding: 20px 0;
+  }
+  .searchblock__leftside {
+    width: 100%;
+  }
+  .searchblock__rightside {
+    display: none;
+  }
+  .searchblock__menu_date {
+    display: none;
+  }
+  .searchblock__menu {
+    margin-left: 20px;
+  }
+  .searchblock__leftside {
+    justify-content: flex-start;
+  }
+  .searchblock__icon_plus {
+    display: none;
+  }
+  .header.active .header__menu_full {
+    display: none;
+  }
+  .header.active .header__menu_short {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    max-height: 150px;
+  }
+  .header__menu_short li {
+    margin: 10px;
+  }
   .footer__mail {
-    width: 100%; }
+    width: 100%;
+  }
   .footer__copyright {
     width: 100%;
-    margin-left: 0; }
-  .actionblock__icon_like, .actionblock__icon_notification {background-color: #f0f0f0; position: relative; margin-right: 12px; display: none;}
-  .actionblock__username {color: #262627; font-size: 16.5px; font-weight: 300; display: inline-block; vertical-align: middle; max-width: 36px; white-space: nowrap; overflow: hidden;}
-  .searchblock__menu_magazine .searchblock__submenu {left: -160px;}
+    margin-left: 0;
+  }
+  .searchblock__menu_magazine .searchblock__submenu {
+    left: -160px;
+  }
 }
 /*# sourceMappingURL=default.css.map */
