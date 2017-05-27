@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="9px" viewBox="0 0 12 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M5,2 L1.49554521,2 C0.679554462,2 0.0949488892,2.66464222 0.21207428,3.48451996 L0.78792572,7.51548004 C0.904115796,8.32881057 1.67027497,9 2.49710104,9 L7,9" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="6.80287324" height="7" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <path d="M9.80287324,2 L6.29841845,2 C5.4824277,2 4.89782213,2.66464222 5.01494752,3.48451996 L5.59079896,7.51548004 C5.70698904,8.32881057 6.47314821,9 7.29997428,9 L11.8028732,9" id="path-3"></path>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="6.80287324" height="7" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+        <path d="M7,0 L3.99077797,0 C3.45097518,0 3,0.447248087 3,0.998956561 L3,2.00104344 C3,2.55733967 3.44358641,3 3.99077797,3" id="path-5"></path>
+        <mask id="mask-6" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="4" height="3" fill="white">
+            <use xlink:href="#path-5"></use>
+        </mask>
+        <path d="M9,0 L5.99077797,0 C5.45097518,0 5,0.447248087 5,0.998956561 L5,2.00104344 C5,2.55733967 5.44358641,3 5.99077797,3" id="path-7"></path>
+        <mask id="mask-8" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="4" height="3" fill="white">
+            <use xlink:href="#path-7"></use>
+        </mask>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="user-small-card/status-1" transform="translate(-27.000000, -5.000000)" stroke="#91949C" stroke-width="2">
+            <g id="status-1" transform="translate(27.000000, 0.000000)">
+                <g id="icon" transform="translate(0.000000, 5.000000)">
+                    <use id="Combined-Shape" mask="url(#mask-2)" fill="#FFFFFF" xlink:href="#path-1"></use>
+                    <use id="Combined-Shape" mask="url(#mask-4)" fill="#FFFFFF" transform="translate(8.401437, 5.500000) scale(-1, 1) translate(-8.401437, -5.500000) " xlink:href="#path-3"></use>
+                    <use id="Combined-Shape" mask="url(#mask-6)" xlink:href="#path-5"></use>
+                    <use id="Combined-Shape" mask="url(#mask-8)" transform="translate(7.000000, 1.500000) scale(-1, 1) translate(-7.000000, -1.500000) " xlink:href="#path-7"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

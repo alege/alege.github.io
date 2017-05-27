@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="6px" height="10px" viewBox="0 0 6 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="01_Main_page-3/filter-3" transform="translate(-704.000000, -230.000000)" stroke-width="2" stroke="#FFFFFF">
+            <g id="sl" transform="translate(564.000000, 160.000000)">
+                <g id="item-for-sl-copy" transform="translate(0.000000, 50.000000)">
+                    <polyline id="arrow" points="141 21 145 25 141 29"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

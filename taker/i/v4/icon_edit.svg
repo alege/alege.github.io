@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="19px" viewBox="0 0 13 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>icon/edit</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="2" y="15" width="2" height="4" rx="1"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="2" height="4" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Reviews" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="02-Detail-ver-2" transform="translate(-136.000000, -182.000000)" stroke="#0A1439">
+            <g id="link" transform="translate(132.000000, 182.000000)">
+                <g id="icon/edit">
+                    <g id="Group-2" transform="translate(8.816987, 10.316987) rotate(-330.000000) translate(-8.816987, -10.316987) translate(6.316987, 0.816987)">
+                        <rect id="Rectangle-9" stroke-width="2" x="1" y="3.55271368e-15" width="4" height="12" rx="1"></rect>
+                        <path d="M0.994475902,15.940205 L0.982058519,11.4384816 C0.979003385,10.3308917 1.88418862,9.4330127 2.97652671,9.4330127 L2.97652671,9.4330127 C4.08109621,9.4330127 4.97917517,10.3336527 4.98240395,11.4316324 L4.9944759,15.536835" id="Rectangle-9" stroke-width="2" transform="translate(2.988263, 12.686609) rotate(-180.000000) translate(-2.988263, -12.686609) "></path>
+                        <use id="Rectangle-9-Copy" mask="url(#mask-2)" stroke-width="4" xlink:href="#path-1"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

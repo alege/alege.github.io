@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="21px" viewBox="0 0 22 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>favorite</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M253.00001,37.5120647 C252.480492,35.2662731 250.34362,33.7668336 248.037502,34.0298809 C245.731384,34.2929283 243.992833,36.2344179 244.000022,38.5386483 C244.000022,44.1696979 253.00001,50 253.00001,50 C253.00001,50 261.999998,44.1696979 261.999998,38.5386483 C262.001156,37.3373962 261.521241,36.1849507 260.66595,35.3351307 C259.81066,34.4853107 258.650146,34.0078186 257.440004,34.0078192 C255.319147,34.0088315 253.478979,35.4611762 253.00001,37.5120647 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-2" y="-2" width="22" height="20">
+            <rect x="242" y="32" width="22" height="20" fill="white"></rect>
+            <use xlink:href="#path-1" fill="black"></use>
+        </mask>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="card/small/hover" transform="translate(-242.000000, -32.000000)" stroke="#FFFFFF" stroke-width="4">
+            <use id="favorite" mask="url(#mask-2)" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

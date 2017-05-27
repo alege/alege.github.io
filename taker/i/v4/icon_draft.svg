@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M9,4 C9,4 9.8938998,4 11.0048815,4 L11.9951185,4 C13.102384,4 14,4.89706013 14,6.00585866 L14,15.9941413 C14,17.1019465 13.1029399,18 11.9941413,18 L2.00585866,18 C0.898053512,18 -2.49981318e-15,17.1061002 -3.02500815e-15,15.9951185 L-4.4408921e-15,13" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="14" height="14" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <path d="M6.96446609,4.67157288 L16.2815538,4.67157288 C17.384257,4.67157288 18.2781746,5.56791825 18.2781746,6.66596807 L18.2781746,8.33403193 C18.2781746,9.43550598 17.3904069,10.3284271 16.2815538,10.3284271 L6.96446609,10.3284271 L2.72182541,7.5 L6.96446609,4.67157288 Z" id="path-3"></path>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="15.5563492" height="5.65685425" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="01_Main_page-3/profile-menu" transform="translate(-1280.000000, -268.000000)" stroke="#6A7086" stroke-width="4">
+            <g id="drop-down-menu" transform="translate(1097.000000, 72.000000)">
+                <g id="menu" transform="translate(44.000000, 194.000000)">
+                    <g id="3" transform="translate(139.000000, 0.000000)">
+                        <g id="icon" transform="translate(0.000000, 2.000000)">
+                            <use id="Rectangle-3" mask="url(#mask-2)" stroke-linecap="round" stroke-linejoin="round" transform="translate(7.000000, 11.000000) rotate(-270.000000) translate(-7.000000, -11.000000) " xlink:href="#path-1"></use>
+                            <use id="Rectangle-4" mask="url(#mask-4)" transform="translate(10.500000, 7.500000) rotate(-45.000000) translate(-10.500000, -7.500000) " xlink:href="#path-3"></use>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

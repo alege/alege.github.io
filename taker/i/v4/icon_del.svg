@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="18px" viewBox="0 0 16 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>icon/del</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M4,4 L16,4 L16,17.0081158 C16,18.1082031 15.0980496,19 13.9914698,19 L6.0085302,19 C4.8992496,19 4,18.1066027 4,17.0081158 L4,4 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="12" height="15" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Reviews" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="02-Detail-ver-2" transform="translate(-328.000000, -183.000000)">
+            <g id="link-copy" transform="translate(326.000000, 182.000000)">
+                <g id="icon/del">
+                    <use id="Rectangle-10" stroke="#D0011B" mask="url(#mask-2)" stroke-width="4" xlink:href="#path-1"></use>
+                    <rect id="Rectangle-11" fill="#D0021B" fill-rule="evenodd" x="2" y="4" width="16" height="2" rx="1"></rect>
+                    <rect id="Rectangle-11" fill="#D0021B" fill-rule="evenodd" x="6" y="1" width="8" height="2" rx="1"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
