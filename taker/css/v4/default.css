@@ -4081,19 +4081,20 @@ select, input, textarea {
 }
 /*large-desktop*/
 @media (max-width: 1919px) {
-
   .container_navcards {
     margin: 0 24px;
-    overflow: visible; }
-
+    overflow: visible;
+  }
   .cardnav:before, .cardnav:after {
-    display: none; }
-
+    display: none;
+  }
   .cardnav__arrow.prev {
-    left: -24px; }
-
+    left: -24px;
+  }
   .cardnav__arrow.next {
-    right: -24px; } }
+    right: -24px;
+  }
+}
 
 @media (max-width: 1270px) {
   .footer .container {
@@ -4122,6 +4123,10 @@ select, input, textarea {
     padding: 0 15px;
     width: 100%;
     box-sizing: border-box;
+  }
+  .comments#comments #mc-container {
+    width: 100%! important;
+    padding: 0 15px;
   }
   .header__rightblock {
     margin-left: auto;
@@ -4194,24 +4199,30 @@ select, input, textarea {
     padding: 30px 0;
   }
   .desktop {
-    display: none !important; }
+    display: none !important;
+  }
   .section_footer .container {
-    width: 720px; }
+    width: 720px;
+  }
   .footer {
     padding: 30px 0;
   }
   .footer__top {
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+  }
   .footer__logoblock {
     justify-content: center;
     width: 100%;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+  }
   .footer .afterlogo {
     margin-left: 20px;
     padding-left: 0;
-    font-size: 16.5px; }
+    font-size: 16.5px;
+  }
   .footer .afterlogo:before {
-    display: none; }
+    display: none;
+  }
   .footer__menu {
     margin: 30px auto 0;
     width: 70%;
@@ -4227,38 +4238,47 @@ select, input, textarea {
   }
   .footer__bottom {
     margin-top: 25px;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+  }
   .footer__certificate {
     max-width: 100%;
     width: 100%;
     margin-right: 0;
     margin-top: 0;
     padding-right: 2px;
-    font-size: 14px; }
+    font-size: 14px;
+  }
   .footer__mail {
-    margin-top: 24px; }
+    margin-top: 24px;
+  }
   .footer__certificate br {
-    display: none; }
+    display: none;
+  }
   .footer__links {
     width: 100%;
     margin-top: 21px;
-    display: flex; }
+    display: flex;
+  }
   .footer__links li {
     width: 50%;
     margin-left: 0;
     padding-right: 20px;
     box-sizing: border-box;
     font-size: 14px;
-    line-height: 1.6em; }
+    line-height: 1.6em;
+  }
   .footer__copyright {
     max-width: 100%;
     margin-top: 24px;
-    font-size: 14px; }
+    font-size: 14px;
+  }
   .footer__bottom-left {
-    width: 100%; }
+    width: 100%;
+  }
   .footer__bottom-right {
     width: 100%;
-    margin-top: 30px; }
+    margin-top: 30px;
+  }
   .searchblock__form input {
     flex-grow: 0;
     flex-basis: 94%;
@@ -4277,6 +4297,56 @@ select, input, textarea {
   }
   .searchblock__categories.active {
     box-sizing: border-box;
+  }
+  .usercard {
+    padding: 30px 0 0;
+  }
+  .usercard__actions {
+    margin-top: 20px;
+  }
+  .usercard__action {
+    padding: 20px 10px;
+  }
+  .share__actions {
+    padding: 106px 30px;
+  }
+  .share__buttonblock {
+    margin: 20px 0;
+  }
+  .share__bottom {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .share__infocolumn_big {
+    flex-basis: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .subscribe__field input {
+    width: 100%;
+  }
+  .comments {
+    padding: 30px 0;
+  }
+  .comments#comments .mc-form {
+    margin-top: 20px !important;
+  }
+  .cardnav__arrow.next {
+    right: 24px;
+  }
+  .actions_detail .actionblock__detailprice, .actions_detail .actionblock .detail__button {
+    display: none;
+  }
+  .actions_detail.full .actionblock__detailprice, .actions_detail.full .actionblock .detail__button {
+    display: block;
+  }
+  .detail__header {
+    padding: 30px 0;
+  }
+  .share__myrating {
+    top: -8px;
+    right: 0;
+    left: auto;
   }
 }
 /*tablet*/
@@ -4437,26 +4507,6 @@ select, input, textarea {
   .reviews__cards.stripes .reviews__cardimage, .reviews__cards.stripes .reviews__img_shop_link {
     width: 210px;
   }
-  .actions, .header {
-    position: relative;
-    top: 0;
-    transition: all .25s;
-  }
-  .page {
-    margin-top: 0;
-  }
-  .header.sticky {
-    position: relative;
-    height: auto;
-    padding: 0;
-  }
-  .header.active {
-    position: fixed;
-    transform: translate3d(0, 0px, 0);
-    top: 0;
-    height: 204px;
-    padding: 47px 0 52px;
-  }
   .actionblock__icon_burger {
     pointer-events: all;
     left: 0;
@@ -4468,14 +4518,72 @@ select, input, textarea {
   .searchblock {
     background: #fff;
   }
-  .reviews {
-    margin-top: 0;
-  }
   .actionblock__writereview, .actionblock__watchreview {
     font-size: 18px;
   }
+  .actions_detail.full .actionblock__detailheading {
+    display: none;
+  }
+  .header.active {
+    transform: translate3d(0, 0, 0);
+    height: 204px;
+    padding: 47px 0 52px;
+    top: 0;
+    position: fixed;
+  }
+  .actions.fullheader {
+    transform: translate3d(0, 204px, 0);
+    position: fixed;
+    top: 0;
+  }
+  .detail__header {
+    flex-wrap: wrap;
+  }
+  .detail__header-right {
+    margin-left: auto;
+  }
+  .detail__authorinfo {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+  }
+  .detail__usercard {
+    margin-left: 0;
+    order: 1;
+  }
+  .detail__goodimage {
+    order: 2;
+  }
+  .detail__textblock {
+    max-width: 80%;
+    padding: 0;
+    margin: 50px auto 0;
+  }
+  .detail__textblock img {
+    max-width: 100%;
+    height: auto;
+  }
+  .detail__heading {
+    font-size: 24px;
+  }
+  .detail__button {
+    padding: 0 18px;
+    line-height: 40px;
+  }
+  .usercard__action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .share__infocolumn {
+    width: 33%;
+    text-align: center;
+  }
+  .share__infocolumn_big {
+    padding-left: 0;
+  }
 }
-
+/*mobile*/
 @media (max-width: 768px) {
   .reviews__cards.stripes .reviews__cardimage, .reviews__cards.stripes .reviews__img_shop_link {
     width: 130px;
@@ -4582,10 +4690,12 @@ select, input, textarea {
     margin: 10px;
   }
   .footer__mail {
-    width: 100%; }
+    width: 100%;
+  }
   .footer__copyright {
     width: 100%;
-    margin-left: 0; }
+    margin-left: 0;
+  }
   .searchblock__menu_magazine .searchblock__submenu {
     left: -160px;
   }
@@ -4601,8 +4711,111 @@ select, input, textarea {
   .searchblock__categories {
     padding: 60px 25px 0;
   }
+  .usercard__stats {
+    display: none;
+  }
+  .detail__usercard {
+    width: 40%;
+    padding-top: 20px;
+  }
+  .detail__goodimage {
+    max-width: 50%;
+  }
+  .usercard__action {
+    padding: 15px 10px;
+  }
+  .usercard__actions, .usercard__name {
+    margin-top: 15px;
+  }
+  .button {
+    line-height: 35px;
+    font-size: 17px;
+  }
+  .share__buttonblock {
+    flex-wrap: wrap;
+    margin: 10px 0;
+  }
+  .button_social {
+    width: 80px;
+    margin-top: 10px;
+  }
+  .share__bottom {
+    padding: 0;
+  }
+  .subscribe, .comments {
+    padding: 15px 0;
+  }
+  .interesting, .topauthors {
+    display: none;
+  }
+  .subscribe__form {
+    flex-wrap: wrap;
+    padding: 15px 20px 15px;
+  }
+  .subscribe__textblock {
+    margin-bottom: 10px;
+  }
+  .subscribe__field {
+    width: 100%;
+  }
+  .subscribe__button {
+    margin: 7px auto 0;
+  }
+  .actions_detail.full .actionblock__goodimage {
+    display: none;
+  }
+  .detail__reviewinfo {
+    flex-direction: column;
+    padding: 0 25px;
+  }
+  .detail__reviewsection {
+    margin-bottom: 10px;
+  }
+  .detail__text, .detail__textblock p {
+    font-size: 16px;
+  }
+  .detail__heading {
+    font-size: 20px;
+  }
+  .share__block {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0;
+  }
+  .usercard.share__usercard {
+    border: 1px solid #eeeff1;
+    width: 50%;
+  }
+  .share__actions {
+    width: 100%;
+    text-align: center;
+    padding: 38px 30px 0;
+  }
+  .share__buttonblock {
+    justify-content: center;
+  }
+  .comments#comments .mc-submit {
+    line-height: 35px !important;
+    font-size: 17px!important;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 0;
+  }
+  .comments#comments .mc-submit-cnt {
+    position: relative !important;
+  }
+  .actions_detail.active .actionblock__watchreview {
+    padding-right: 25px;
+    padding-left: 50px;
+  }
+  .comments#comments .mc-form {
+    padding: 15px 10px 50px!important;
+  }
+  .comments#comments .mc-text-wrap {
+    margin-right: 80px!important;
+  }
 }
-
+/*mobile-small*/
 @media (max-width: 540px) {
   .searchblock__submenu a {
     padding: 8px 20px;
@@ -4691,6 +4904,81 @@ select, input, textarea {
   }
   .loginform {
     max-width: 100%;
+  }
+  .detail__textblock ul, .detail__textblock ol {
+    padding: 0;
+  }
+  .detail__textblock ul li, .detail__textblock ol li {
+    font-size: 16px;
+  }
+  .actions_detail .actionblock {
+    height: 70px;
+  }
+  .detail {
+    margin-top: -74px;
+    padding-bottom: 15px;
+  }
+  .share {
+    padding: 20px 0 10px;
+  }
+  .share__actions {
+    padding: 25px 15px 0;
+  }
+  .share__infotext {
+    font-size: 15px;
+  }
+  .share__count {
+    font-size: 24px;
+  }
+  .actions_detail.active .actionblock__detailprice, .actions_detail.active .actionblock .detail__button {
+    display: none;
+  }
+  .detail__authorinfo {
+    flex-direction: column;
+  }
+  .detail__goodimage {
+    width: 90%;
+    max-width: 100%;
+    margin-top: 15px;
+  }
+  .detail__usercard {
+    width: 70%;
+  }
+  .detail__textblock {
+    max-width: 90%;
+  }
+  .comments#comments .mc-comment-time {
+    width: 100% !important;
+  }
+  .comments#comments .mc-comment-msg {
+    font-size: 14px !important;
+  }
+  .comments#comments .cc .mc-comment-head {
+    padding: 0 !important;
+  }
+  .usercard.share__usercard {
+    width: 70%;
+  }
+  .usercard__name, .share__text, .subscribe__heading, .comments__heading {
+    font-size: 22px;
+  }
+  .share__smalltext {
+    font-size: 16px;
+  }
+  .detail__text, .detail__textblock p {
+    font-size: 15px;
+  }
+  .detail__heading {
+    font-size: 18px;
+  }
+  .share__bottom {
+    margin-top: 35px;
+  }
+  .detail__reviewinfo, .detail__textblock {
+    margin-top: 25px;
+  }
+  .reviews__price {
+    margin-left: auto;
   }
 }
 /*# sourceMappingURL=default.css.map */
