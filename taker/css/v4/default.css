@@ -4134,6 +4134,28 @@ select, input, textarea {
   .header__menu_short li {
     margin-right: 20px;
   }
+  .header.active .header__text {
+    display: none;
+  }
+  .header.active .container {
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .header.active .header__rightblock {
+    display: none;
+  }
+  .header.active .header__menu_full {
+    display: flex;
+    flex-basis: 77%;
+    margin-left: 35px;
+    flex-grow: 0;
+  }
+  .header.active .menu__column {
+    margin-left: 35px;
+  }
+  .header>.container, .actionblock>.container {
+    padding: 0 30px;
+  }
   .reviews .container {
     padding: 0;
     width: 100%;
@@ -4415,6 +4437,43 @@ select, input, textarea {
   .reviews__cards.stripes .reviews__cardimage, .reviews__cards.stripes .reviews__img_shop_link {
     width: 210px;
   }
+  .actions, .header {
+    position: relative;
+    top: 0;
+    transition: all .25s;
+  }
+  .page {
+    margin-top: 0;
+  }
+  .header.sticky {
+    position: relative;
+    height: auto;
+    padding: 0;
+  }
+  .header.active {
+    position: fixed;
+    transform: translate3d(0, 0px, 0);
+    top: 0;
+    height: 204px;
+    padding: 47px 0 52px;
+  }
+  .actionblock__icon_burger {
+    pointer-events: all;
+    left: 0;
+    opacity: 1;
+  }
+  .actionblock__watchreview {
+    padding-left: 50px;
+  }
+  .searchblock {
+    background: #fff;
+  }
+  .reviews {
+    margin-top: 0;
+  }
+  .actionblock__writereview, .actionblock__watchreview {
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -4454,7 +4513,7 @@ select, input, textarea {
     height: 30px;
   }
   .actionblock__watchreview, .actionblock__writereview.site_login_call {
-    font-size: 16px;
+    font-size: 15px;
   }
   .actions.active .actionblock__writereview {
     line-height: initial;
@@ -4530,9 +4589,24 @@ select, input, textarea {
   .searchblock__menu_magazine .searchblock__submenu {
     left: -160px;
   }
+  .actionblock__watchreview {
+    padding-left: 35px;
+  }
+  .actionblock__icon_plus {
+    margin-right: 5px;
+  }
+  .reviews__pagenumbers li {
+    margin-left: 5px;
+  }
+  .searchblock__categories {
+    padding: 60px 25px 0;
+  }
 }
 
 @media (max-width: 540px) {
+  .searchblock__submenu a {
+    padding: 8px 20px;
+  }
   .actionblock__watchreview .text {
     display: none;
   }
@@ -4563,7 +4637,60 @@ select, input, textarea {
     max-width: 90%;
   }
   .header>.container, .actionblock .container {
+    padding: 0 15px !important;
+  }
+  .header.active {
+    height: 240px;
+    padding: 15px 0;
+  }
+  .actions.fullheader {
+    transform: translate3d(0, 240px, 0);
+  }
+  .header.active .container {
+    flex-direction: column;
+  }
+  .header.active .header__menu_short {
+    margin-left: 0;
+    flex-wrap: nowrap;
+  }
+  .header__menu_short li {
+    margin: 5px;
+  }
+  .actionblock__writereview .text {
+  }
+  .actionblock__writereview.site_login_call {
+    width: 145px;
+  }
+  .actions.active .actionblock__writereview.site_login_call {
+    width: auto;
+  }
+  .actionblock__writereview.site_login_call .text {
+    display: none;
+  }
+  .actions.active .actionblock__icon_plus {
+    margin-right: 10px;
+  }
+  .actionblock__register:after {
+    content: none;
+  }
+  .actionblock__register, .actionblock__login {
+    font-size: 14px;
+  }
+  .actionblock__login {
     padding: 0 15px;
+    margin-left: 0;
+  }
+  .actionblock__register {
+    margin-right: 3px;
+  }
+  .actions.active .actionblock__writereview {
+    margin-left: -6px;
+  }
+  .actionblock__leftside {
+    max-width: 135px;
+  }
+  .loginform {
+    max-width: 100%;
   }
 }
 /*# sourceMappingURL=default.css.map */
