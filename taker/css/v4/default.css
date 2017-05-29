@@ -1190,7 +1190,6 @@ select, input, textarea {
     pointer-events: all; }
 
   .actions.active .actionblock {
-    padding: 12px 0;
     pointer-events: all; }
 
     .actions.active .actionblock .container {
@@ -1241,12 +1240,6 @@ select, input, textarea {
 
   .actions.fancybox-margin {
     margin-left: -8.5px; }
-
-  .actions_detail .actionblock {
-    height: 102px;
-    padding: 0;
-    display: flex;
-    align-items: center; }
 
   .actions_detail .actionblock__watchreview {
     white-space: nowrap;
@@ -1366,11 +1359,16 @@ select, input, textarea {
 
 .actionblock {
   box-shadow: 0 2px 30px rgba(25, 33, 44, 0.04);
-  padding: 31px 0;
+  /*padding: 31px 0;*/
   background-color: #fff;
   transition: all 0.25s ease-in-out;
   position: relative;
-  z-index: 3; }
+  z-index: 3;
+  height: 104px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
 
   .actionblock.noshadow {
     box-shadow: none; }
@@ -4620,9 +4618,6 @@ select, input, textarea {
     width: 100%;
     padding: 0 22px;
   }
-  .actionblock {
-    padding: 20px 0;
-  }
   .actionblock__icon_plus, .actions.active .actionblock__icon, .actionblock__icon {
     width: 30px;
     height: 30px;
@@ -4921,7 +4916,7 @@ select, input, textarea {
   .detail__textblock ul li, .detail__textblock ol li {
     font-size: 16px;
   }
-  .actions_detail .actionblock {
+  .actions .actionblock {
     height: 70px;
   }
   .detail {
