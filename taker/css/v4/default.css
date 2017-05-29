@@ -4116,6 +4116,17 @@ select, input, textarea {
   .footer__links li {
     font-size: 13px;
   }
+  .in_top {
+    margin-top: 104px;
+    opacity: 0.9;
+    right: 0;
+    left: auto;
+    height: 144px;
+    z-index: 6;
+  }
+  .in_top .arrow {
+    margin: 60px auto 0;
+  }
 }
 /*laptop*/
 @media (max-width: 1175px) {
@@ -4979,6 +4990,15 @@ select, input, textarea {
   }
   .reviews__price {
     margin-left: auto;
+  }
+  .in_top {
+    opacity: 0.7;
+    width: 65px;
+    height: 100px;
+    margin-top: 70px;
+  }
+  .in_top .arrow {
+    margin-top: 36px;
   }
 }
 /*# sourceMappingURL=default.css.map */
