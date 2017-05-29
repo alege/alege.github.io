@@ -1359,7 +1359,6 @@ select, input, textarea {
 
 .actionblock {
   box-shadow: 0 2px 30px rgba(25, 33, 44, 0.04);
-  /*padding: 31px 0;*/
   background-color: #fff;
   transition: all 0.25s ease-in-out;
   position: relative;
@@ -4656,7 +4655,7 @@ select, input, textarea {
     margin-left: 0;
   }
   .reviews {
-    margin-top: -26px;
+    margin-top: 22px;
   }
   .searchblock {
     padding: 20px 0;
@@ -4822,6 +4821,9 @@ select, input, textarea {
 }
 /*mobile-small*/
 @media (max-width: 540px) {
+  .reviews {
+    margin-top: -20px;
+  }
   .searchblock__submenu a {
     padding: 8px 20px;
   }
