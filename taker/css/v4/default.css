@@ -4166,7 +4166,7 @@ select, input, textarea {
     margin-left: 35px;
   }
   .header>.container, .actionblock>.container {
-    padding: 0 30px;
+    padding: 0 30px !important;
   }
   .reviews .container {
     padding: 0;
@@ -4355,6 +4355,16 @@ select, input, textarea {
     right: 0;
     left: auto;
   }
+  .subscribe__form {
+    align-items: flex-end;
+  }
+  .subscribe__field input {
+    padding: 0;
+    height: 40px;
+  }
+  .comments#comments .mc-textarea {
+    max-height: 40px !important;
+  }
 }
 /*tablet*/
 @media (min-width: 992px) {
@@ -4362,6 +4372,9 @@ select, input, textarea {
     display: none !important; }
 	}
 @media (max-width: 992px) {
+  .comments#comments .mc-avatar-wrap {
+    top: -10px !important;
+  }
   .header__menu_short {
     display: none;
   }
@@ -4445,9 +4458,6 @@ select, input, textarea {
   }
   .header.active .menu__column {
     margin-left: 35px;
-  }
-  .header>.container, .actionblock>.container {
-    padding: 0 30px;
   }
   .footer__top {
     flex-wrap: wrap; }
@@ -4588,6 +4598,9 @@ select, input, textarea {
   }
   .share__infocolumn_big {
     padding-left: 0;
+  }
+  .comments#comments .mc-textarea {
+    padding: 10px !important;
   }
 }
 /*mobile*/
@@ -4818,6 +4831,9 @@ select, input, textarea {
   .comments#comments .mc-text-wrap {
     margin-right: 80px!important;
   }
+  .comments#comments .mc-comment-replybox .mc-submit {
+    top: -15px !important;
+  }
 }
 /*mobile-small*/
 @media (max-width: 540px) {
@@ -4904,7 +4920,7 @@ select, input, textarea {
     margin-right: 3px;
   }
   .actions.active .actionblock__writereview {
-    margin-left: -6px;
+    margin-left: -10px;
   }
   .actionblock__leftside {
     max-width: 135px;
@@ -4995,6 +5011,30 @@ select, input, textarea {
   }
   .in_top .arrow {
     margin-top: 17px;
+  }
+  .share__icon_star {
+    margin-right: 5px;
+  }
+  .comments#comments .mc-text-wrap {
+    margin-right: 42px !important;
+  }
+  .comments#comments .mc-attach-toggle {
+    top: auto !important;
+    right: -40px !important;
+    width: 40px !important;
+    height: 40px !important;
+  }
+  .comments#comments .mc-attach-toggle span {
+    margin-top: 10px !important;
+  }
+  .comments#comments .mc-avatar-cnt {
+    display: none !important;
+  }
+  .comments#comments .mc-text-cnt, .comments#comments .mc-text-wrap {
+    margin-left: 0 !important;
+  }
+  .comments#comments .mc-textarea {
+    font-size: 15px !important;
   }
 }
 /*# sourceMappingURL=default.css.map */
