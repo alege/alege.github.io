@@ -4119,13 +4119,12 @@ select, input, textarea {
   .in_top {
     margin-top: 104px;
     opacity: 0.9;
-    right: 0;
-    left: auto;
-    height: 144px;
+    height: 80px;
     z-index: 6;
+    width: 80px;
   }
   .in_top .arrow {
-    margin: 60px auto 0;
+    margin: 24px auto 0;
   }
 }
 /*laptop*/
@@ -4994,11 +4993,11 @@ select, input, textarea {
   .in_top {
     opacity: 0.7;
     width: 65px;
-    height: 100px;
+    height: 65px;
     margin-top: 70px;
   }
   .in_top .arrow {
-    margin-top: 36px;
+    margin-top: 17px;
   }
 }
 /*# sourceMappingURL=default.css.map */
