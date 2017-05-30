@@ -4080,6 +4080,14 @@ select, input, textarea {
 .detail__textblock img {
   max-width: 100%;
   height: auto;
+  margin: 35px 0;
+}
+.detail__header-right {
+  flex-shrink: 0;
+  margin-left: 30px;
+}
+.comments#comments .mc-avatar-wrap {
+  top: -10px !important;
 }
 /*large-desktop*/
 @media (max-width: 1919px) {
@@ -4099,6 +4107,22 @@ select, input, textarea {
 }
 
 @media (max-width: 1270px) {
+  .actionblock .container {
+    padding: 0 15px;
+  }
+  .usercard__rank {
+    margin-bottom: 15px;
+  }
+  .detail__authorinfo {
+    display: flex;
+  }
+  .detail__usercard {
+    display: flex;
+    flex-direction: column;
+  }
+  .usercard__actions {
+    margin-top: auto;
+  }
   .footer .container {
     width: 1140px;
   }
@@ -4131,6 +4155,9 @@ select, input, textarea {
 }
 /*laptop*/
 @media (max-width: 1175px) {
+  .subscribe__field {
+    padding: 0 15px;
+  }
   .container {
     padding: 0 15px;
     width: 100%;
@@ -4313,9 +4340,6 @@ select, input, textarea {
   .usercard {
     padding: 30px 0 0;
   }
-  .usercard__actions {
-    margin-top: 20px;
-  }
   .usercard__action {
     padding: 20px 10px;
   }
@@ -4377,9 +4401,6 @@ select, input, textarea {
     display: none !important; }
 	}
 @media (max-width: 992px) {
-  .comments#comments .mc-avatar-wrap {
-    top: -10px !important;
-  }
   .header__menu_short {
     display: none;
   }
@@ -4558,23 +4579,9 @@ select, input, textarea {
     position: fixed;
     top: 0;
   }
-  .detail__header {
-    flex-wrap: wrap;
-  }
-  .detail__header-right {
-    margin-left: auto;
-  }
   .detail__authorinfo {
-    align-items: center;
     display: flex;
     justify-content: space-around;
-  }
-  .detail__usercard {
-    margin-left: 0;
-    order: 1;
-  }
-  .detail__goodimage {
-    order: 2;
   }
   .detail__textblock {
     max-width: 80%;
@@ -4600,12 +4607,20 @@ select, input, textarea {
   .share__infocolumn_big {
     padding-left: 0;
   }
-  .comments#comments .mc-textarea {
-    padding: 10px !important;
-  }
 }
 /*mobile*/
 @media (max-width: 768px) {
+  .detail__header {
+    flex-wrap: wrap;
+  }
+  .detail__header-right {
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 0;
+  }
+  .detail__authorinfo {
+    flex-direction: column;
+  }
   .reviews__cards.stripes .reviews__cardimage, .reviews__cards.stripes .reviews__img_shop_link {
     width: 130px;
   }
@@ -4733,16 +4748,18 @@ select, input, textarea {
     display: none;
   }
   .detail__usercard {
-    width: 40%;
+    width: 360px;
     padding-top: 20px;
+    margin: 30px auto 0;
   }
   .detail__goodimage {
-    max-width: 50%;
+    max-width: 70%;
+    margin: 0 auto;
   }
   .usercard__action {
     padding: 15px 10px;
   }
-  .usercard__actions, .usercard__name {
+  .usercard__name {
     margin-top: 15px;
   }
   .button {
@@ -4761,23 +4778,24 @@ select, input, textarea {
     padding: 0;
   }
   .subscribe, .comments {
-    padding: 15px 0;
+    padding: 30px 0;
   }
   .interesting, .topauthors {
     display: none;
   }
   .subscribe__form {
     flex-wrap: wrap;
-    padding: 15px 20px 15px;
+    padding: 30px;
   }
   .subscribe__textblock {
     margin-bottom: 10px;
   }
   .subscribe__field {
     width: 100%;
+    padding: 0;
   }
   .subscribe__button {
-    margin: 7px auto 0;
+    margin: 15px auto 0;
   }
   .actions_detail.full .actionblock__goodimage {
     display: none;
@@ -4817,7 +4835,7 @@ select, input, textarea {
     font-size: 17px!important;
     transform: translateX(-50%);
     left: 50%;
-    top: 0;
+    top: 8px;
   }
   .comments#comments .mc-submit-cnt {
     position: relative !important;
@@ -4827,13 +4845,22 @@ select, input, textarea {
     padding-left: 50px;
   }
   .comments#comments .mc-form {
-    padding: 15px 10px 50px!important;
+    padding: 30px 20px 70px!important
   }
   .comments#comments .mc-text-wrap {
     margin-right: 80px!important;
   }
   .comments#comments .mc-comment-replybox .mc-submit {
     top: -15px !important;
+  }
+  .actions .actionblock {
+    height: 70px;
+  }
+  .detail {
+    margin-top: -82px;
+  }
+  .comments#comments .mc-sort-toggle {
+    padding-top: 35px !important;
   }
 }
 /*mobile-small*/
@@ -4935,11 +4962,8 @@ select, input, textarea {
   .detail__textblock ul li, .detail__textblock ol li {
     font-size: 16px;
   }
-  .actions .actionblock {
-    height: 70px;
-  }
   .detail {
-    margin-top: -74px;
+    margin-top: -70px;
     padding-bottom: 15px;
   }
   .share {
@@ -4957,16 +4981,13 @@ select, input, textarea {
   .actions_detail.active .actionblock__detailprice, .actions_detail.active .actionblock .detail__button {
     display: none;
   }
-  .detail__authorinfo {
-    flex-direction: column;
-  }
   .detail__goodimage {
     width: 90%;
     max-width: 100%;
     margin-top: 15px;
   }
   .detail__usercard {
-    width: 70%;
+    width: 300px;
   }
   .detail__textblock {
     max-width: 90%;
@@ -5017,7 +5038,7 @@ select, input, textarea {
     margin-right: 5px;
   }
   .comments#comments .mc-text-wrap {
-    margin-right: 42px !important;
+    margin-right: 35px !important;
   }
   .comments#comments .mc-attach-toggle {
     top: auto !important;
