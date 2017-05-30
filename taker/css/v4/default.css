@@ -4076,6 +4076,11 @@ select, input, textarea {
 .detail__header, .detail__reviewinfo, .detail__imageblock, .detail__linkblock, .detail__authorinfo, .detail__textblock p{
 	visibility: hidden;
 }
+
+.detail__textblock img {
+  max-width: 100%;
+  height: auto;
+}
 /*large-desktop*/
 @media (max-width: 1919px) {
   .container_navcards {
@@ -4575,10 +4580,6 @@ select, input, textarea {
     max-width: 80%;
     padding: 0;
     margin: 50px auto 0;
-  }
-  .detail__textblock img {
-    max-width: 100%;
-    height: auto;
   }
   .detail__heading {
     font-size: 24px;
