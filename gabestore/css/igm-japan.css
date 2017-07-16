@@ -329,7 +329,7 @@
   align-items: flex-end;
 }
 .random-cols__item_card {
-  padding: 35px 50px 35px;
+  padding: 35px 45px 35px;
 }
 @media (max-width: 1024px) {
   .random-cols__item_card {
@@ -361,6 +361,7 @@
 }
 .random-cols__item_card .random-cols__bot {
   margin-top: -30px;
+  padding-bottom: 65px;
 }
 .random-cols__item_white {
   background-color: #fff;
