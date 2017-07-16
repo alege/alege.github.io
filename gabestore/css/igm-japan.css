@@ -1,9 +1,24 @@
+.japan-summer__block {
+  margin-top: 60px;
+}
+.japan-summer__faq-block {
+  margin-top: 43px;
+  margin-bottom: 8px;
+}
 .japan-summer-banner {
   background-color: #fff;
   padding-left: 50px;
   padding-right: 50px;
   position: relative;
   z-index: 1;
+  text-align: center;
+}
+.japan-summer-banner_transparent {
+  background-color: transparent;
+}
+.japan-summer-banner_responsive {
+  padding-left: 5%;
+  padding-right: 5%;
 }
 @media (max-width: 768px) {
   .japan-summer-banner {
@@ -14,6 +29,14 @@
 .japan-summer-banner .h1 {
   line-height: 1.2em;
   margin-bottom: 10px;
+}
+.japan-summer-banner__showmore {
+  margin-top: 60px;
+}
+@media (max-width: 1042px) {
+  .japan-summer-banner__showmore {
+    margin-top: 20px;
+  }
 }
 .japan-summer-banner__main-image {
   margin-top: 42px;
@@ -36,7 +59,6 @@
 .japan-summer-banner__section {
   padding-top: 45px;
   padding-bottom: 38px;
-  text-align: center;
   z-index: 5;
   position: relative;
 }
@@ -243,6 +265,10 @@
 .participate-steps__text_link {
   color: #ff5c01;
   text-decoration: underline;
+  transition: color 0.25s ease-in-out;
+}
+.participate-steps__text_link:hover {
+  color: #f00;
 }
 .participate-steps__number-container {
   flex-shrink: 0;
@@ -268,4 +294,146 @@
   line-height: 2;
   font-size: 24px;
   font-weight: 700;
+}
+.btn_yellow {
+  background-color: #ffc608;
+}
+.btn_yellow .iconic {
+  color: #cb9c00;
+}
+.btn_yellow:hover {
+  background-color: #edb600;
+}
+.btn_responsive {
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 100%;
+}
+.btn_responsive .iconic {
+  margin-right: 25px;
+}
+.btn_text_big {
+  font-size: 18px;
+  line-height: 3.33;
+  border-radius: 30px;
+}
+@media (max-width: 1024px) {
+  .btn_text_big {
+    line-height: 2.5;
+  }
+}
+.random-cols_text_center {
+  text-align: center;
+}
+.random-cols_cards {
+  align-items: flex-end;
+}
+.random-cols__item_card {
+  padding: 35px 50px 35px;
+}
+@media (max-width: 1024px) {
+  .random-cols__item_card {
+    padding: 35px;
+  }
+}
+@media (min-width: 860px) {
+  .random-cols__item_card {
+    width: 32.259%;
+    min-height: 605px;
+  }
+}
+.random-cols__item_card .random-cols__btn {
+  bottom: 30px;
+}
+.random-cols__item_card .btn {
+  border: 1px solid #d9d9d9;
+}
+.random-cols__item_card p {
+  line-height: 1.42;
+}
+.random-cols__item_card h2.h4 {
+  font-size: 21px;
+  text-transform: none;
+  margin-bottom: 10px;
+}
+.random-cols__item_card .random-cols__item-img SPAN {
+  padding: 12% 15% 10% 12%;
+}
+.random-cols__item_card .random-cols__bot {
+  margin-top: -30px;
+}
+.random-cols__item_white {
+  background-color: #fff;
+}
+@media (min-width: 860px) {
+  .random-cols__item_main {
+    min-height: 650px;
+  }
+  .random-cols__item_main .random-cols__btn {
+    bottom: 40px;
+  }
+}
+.faq-block__showbutton {
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  left: 32px;
+  top: 30px;
+}
+.faq-block__showbutton::before,
+.faq-block__showbutton::after {
+  content: "";
+  height: 2px;
+  width: 14px;
+  background-color: #fbab1f;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition: transform 0.25s ease-in-out;
+  transform: translate(-50%, -50%);
+}
+.faq-block__showbutton::after {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+.faq-block__showbutton.active::after {
+  transform: translate(-50%, -50%);
+}
+.faq-block__item {
+  background-color: #fff;
+  padding: 26px 30% 29px 32px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  position: relative;
+}
+@media (max-width: 1024px) {
+  .faq-block__item {
+    padding-right: 20%;
+  }
+}
+@media (max-width: 860px) {
+  .faq-block__item {
+    padding-right: 30px;
+  }
+}
+.faq-block__item:not(:first-child) {
+  margin-top: 10px;
+}
+.faq-block__heading {
+  font-size: 21px;
+  color: #161826;
+  line-height: 1.2em;
+  padding-left: 40px;
+}
+@media (max-width: 768px) {
+  .faq-block__heading {
+    font-size: 18px;
+  }
+}
+.faq-block__more {
+  display: none;
+  color: #5d5d5d;
+  line-height: 1.42;
+  margin-left: 40px;
+  margin-top: 12px;
+  margin-bottom: 7px;
 }

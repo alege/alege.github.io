@@ -1,0 +1,1 @@
+$(".faq-block__item").click(function(t){t.preventDefault(),$(this).find(".faq-block__more").slideToggle(),$(this).find(".faq-block__showbutton").toggleClass("active")});
