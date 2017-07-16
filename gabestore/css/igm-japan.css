@@ -17,13 +17,21 @@
 }
 .japan-summer-banner__main-image {
   margin-top: 42px;
-  margin-left: 10px;
   margin-bottom: 18px;
+  user-select: none;
 }
 @media (max-width: 1024px) {
   .japan-summer-banner__main-image {
     max-width: 60%;
   }
+}
+@media (min-width: 1024px) {
+  .japan-summer-banner__main-image {
+    margin-left: 10px;
+  }
+}
+.japan-summer-banner__steps {
+  margin-top: 65px;
 }
 .japan-summer-banner__section {
   padding-top: 45px;
@@ -31,6 +39,9 @@
   text-align: center;
   z-index: 5;
   position: relative;
+}
+.japan-summer-banner__section_bigger-top {
+  padding-top: 52px;
 }
 .japan-summer-banner__section_smaller-bottom {
   padding-bottom: 20px;
@@ -91,8 +102,8 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding-left: 33px;
-  padding-right: 33px;
+  padding-top: 33px;
+  padding-bottom: 33px;
 }
 @media (max-width: 1024px) {
   .japan-summer-banner__partners {
@@ -182,4 +193,79 @@
 .decoration-dots__item_left-bottom {
   left: -285px;
   bottom: -150px;
+}
+.participate-steps {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #fff7f5;
+  padding: 45px 90px 65px;
+  text-align: left;
+}
+@media (max-width: 1024px) {
+  .participate-steps {
+    padding: 45px;
+  }
+}
+@media (max-width: 768px) {
+  .participate-steps {
+    padding: 30px;
+  }
+}
+.participate-steps__item {
+  display: flex;
+  align-items: center;
+  flex-basis: 44%;
+}
+@media (min-width: 1024px) {
+  .participate-steps__item:nth-child(n+3) {
+    margin-top: 48px;
+  }
+}
+@media (max-width: 1024px) {
+  .participate-steps__item {
+    flex-basis: 100%;
+  }
+  .participate-steps__item:not(:first-child) {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .participate-steps__item {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.participate-steps__text {
+  line-height: 1.2;
+  font-size: 18px;
+}
+.participate-steps__text_link {
+  color: #ff5c01;
+  text-decoration: underline;
+}
+.participate-steps__number-container {
+  flex-shrink: 0;
+  margin-right: 28px;
+  width: 48px;
+  height: 48px;
+  text-align: center;
+  position: relative;
+}
+@media (max-width: 768px) {
+  .participate-steps__number-container {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+}
+.participate-steps__number-container svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(-90deg);
+}
+.participate-steps__number {
+  line-height: 2;
+  font-size: 24px;
+  font-weight: 700;
 }
