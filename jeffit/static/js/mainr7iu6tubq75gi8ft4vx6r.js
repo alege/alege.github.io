@@ -809,7 +809,6 @@ $(document).ready(function () {
     });
 });
 
-
 /*$(document).ready(function () {
     $('#choiceDemoModal').modal('show');
 });
@@ -823,6 +822,7 @@ function choiceDemoOutsource() {
     $('.nav-tabs a[href="#tab_outsource"]').tab('show');
     $('#choiceDemoModal').modal('hide');
 }*/
+
 $('.screenchanger__navigation li').click(function () {
     var ind = $(this).index();
     $(this).parents('.screenchanger').find('.screenchanger__screens img:eq(' + ind + ')').addClass('active').siblings().removeClass('active');
