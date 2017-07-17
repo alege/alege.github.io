@@ -1,114 +1,3 @@
-$(document).ready(function () {
-    var container = $('#blogPostsContainer');
-    if (!container.length) {
-        return;
-    }
-    var content = $('#blogPostsContent');
-    $.ajax({
-        url: 'https://jeffit.ru/blog/feed/json',
-        dataType: 'jsonp',
-        error: function (jsxhr, status, error) {
-            container.hide();
-        },
-        success: function (response) {
-            render(response);
-            console.log(response);
-        }
-    });
-
-    function compile(item) {
-        var excerpt = item.excerpt.split(' ').slice(0, 20).join(' ');
-        var thumbData = item.thumbnail && item.thumbnail.split(', ')[2].split(' ') || null;
-        var thumbSrc = thumbData && thumbData[0] || '';
-
-        return '<div class="item">' +
-            '<div class="c-content-blog-post-card-1 c-option-2">' +
-                '<div class="c-media c-content-overlay" style="max-height: 300px; background: url(' + thumbSrc + ') 50% 50%; background-size: cover;">' +
-                    '<a href="' + item.permalink + '" style="display: block; text-decoration: none; padding-bottom: 100%;"></a>' +
-                '</div>' +
-                '<div class="c-body" style="min-height: 350px;">' +
-                    '<div class="c-title c-font-uppercase c-font-bold">' +
-                        '<a href="' + item.permalink + '">' + item.title + '</a>' +
-                    '</div>' +
-                    '<div class="c-author">' +
-                        '<span class="c-font-uppercase">' + item.author + '</span> ' +
-                        '&nbsp;&nbsp;<span class="c-font-uppercase">' + item.date + '</span>' +
-                    '</div>' +
-                    // '<div class="c-panel">' +
-                        // '<ul class="c-tags c-theme-ul-bg">' +
-                        //     '<li>ux</li>' +
-                        //     '<li>web</li>' +
-                        //     '<li>events</li>' +
-                        // '</ul>' +
-                        // '<div class="c-comments">' +
-                        //     '<a href="#"><i class="icon-speech"></i> 30 comments</a>' +
-                        // '</div>' +
-                    // '</div>' +
-                    '<p>' + excerpt + '…</p>' +
-                '</div>' +
-            '</div>' +
-        '</div>';
-    }
-
-    function render(data) {
-        if (!data || !data.length) {
-            container.hide();
-            return;
-        }
-        data.splice(10);
-        content.html('');
-
-        for (var i = 0; i < data.length; i++) {
-            content.append(compile(data[i]));
-        }
-
-        var columns = data.length > 3 ? 3 : data.length;
-        var owl = $('#blogPostsContent');
-        owl.owlCarousel({
-            items: columns
-        });
-
-        handleHeight();
-    }
-
-    function handleHeight() {
-        $('[data-auto-height]').each(function () {
-            var parent = $(this);
-            var items = $('[data-height]', parent);
-            var height = 0;
-            var mode = parent.attr('data-mode');
-            var offset = parseInt(parent.attr('data-offset') ? parent.attr('data-offset') : 0);
-
-            items.each(function () {
-                if ($(this).attr('data-height') == 'height') {
-                    $(this).css('height', '');
-                } else {
-                    $(this).css('min-height', '');
-                }
-
-                var height_ = (mode == 'base-height' ? $(this).outerHeight() : $(this).outerHeight(true));
-                if (height_ > height) {
-                    height = height_;
-                }
-            });
-
-            height = height + offset;
-
-            items.each(function () {
-                if ($(this).attr('data-height') == 'height') {
-                    $(this).css('height', height);
-                } else {
-                    $(this).css('min-height', height);
-                }
-            });
-
-            if (parent.attr('data-related')) {
-                $(parent.attr('data-related')).css('height', parent.height());
-            }
-        });
-    }
-});
-
 (function ($) {
     var amoConfig = {
         contactUrl: 'https://jeffit.ru/amocrm-api/contacts/set',
@@ -800,6 +689,117 @@ $(document).ready(function () {
     });
 
 })(jQuery);
+
+$(document).ready(function () {
+    var container = $('#blogPostsContainer');
+    if (!container.length) {
+        return;
+    }
+    var content = $('#blogPostsContent');
+    $.ajax({
+        url: 'https://jeffit.ru/blog/feed/json',
+        dataType: 'jsonp',
+        error: function (jsxhr, status, error) {
+            container.hide();
+        },
+        success: function (response) {
+            render(response);
+            console.log(response);
+        }
+    });
+
+    function compile(item) {
+        var excerpt = item.excerpt.split(' ').slice(0, 20).join(' ');
+        var thumbData = item.thumbnail && item.thumbnail.split(', ')[2].split(' ') || null;
+        var thumbSrc = thumbData && thumbData[0] || '';
+
+        return '<div class="item">' +
+            '<div class="c-content-blog-post-card-1 c-option-2">' +
+                '<div class="c-media c-content-overlay" style="max-height: 300px; background: url(' + thumbSrc + ') 50% 50%; background-size: cover;">' +
+                    '<a href="' + item.permalink + '" style="display: block; text-decoration: none; padding-bottom: 100%;"></a>' +
+                '</div>' +
+                '<div class="c-body" style="min-height: 350px;">' +
+                    '<div class="c-title c-font-uppercase c-font-bold">' +
+                        '<a href="' + item.permalink + '">' + item.title + '</a>' +
+                    '</div>' +
+                    '<div class="c-author">' +
+                        '<span class="c-font-uppercase">' + item.author + '</span> ' +
+                        '&nbsp;&nbsp;<span class="c-font-uppercase">' + item.date + '</span>' +
+                    '</div>' +
+                    // '<div class="c-panel">' +
+                        // '<ul class="c-tags c-theme-ul-bg">' +
+                        //     '<li>ux</li>' +
+                        //     '<li>web</li>' +
+                        //     '<li>events</li>' +
+                        // '</ul>' +
+                        // '<div class="c-comments">' +
+                        //     '<a href="#"><i class="icon-speech"></i> 30 comments</a>' +
+                        // '</div>' +
+                    // '</div>' +
+                    '<p>' + excerpt + '…</p>' +
+                '</div>' +
+            '</div>' +
+        '</div>';
+    }
+
+    function render(data) {
+        if (!data || !data.length) {
+            container.hide();
+            return;
+        }
+        data.splice(10);
+        content.html('');
+
+        for (var i = 0; i < data.length; i++) {
+            content.append(compile(data[i]));
+        }
+
+        var columns = data.length > 3 ? 3 : data.length;
+        var owl = $('#blogPostsContent');
+        owl.owlCarousel({
+            items: columns
+        });
+
+        handleHeight();
+    }
+
+    function handleHeight() {
+        $('[data-auto-height]').each(function () {
+            var parent = $(this);
+            var items = $('[data-height]', parent);
+            var height = 0;
+            var mode = parent.attr('data-mode');
+            var offset = parseInt(parent.attr('data-offset') ? parent.attr('data-offset') : 0);
+
+            items.each(function () {
+                if ($(this).attr('data-height') == 'height') {
+                    $(this).css('height', '');
+                } else {
+                    $(this).css('min-height', '');
+                }
+
+                var height_ = (mode == 'base-height' ? $(this).outerHeight() : $(this).outerHeight(true));
+                if (height_ > height) {
+                    height = height_;
+                }
+            });
+
+            height = height + offset;
+
+            items.each(function () {
+                if ($(this).attr('data-height') == 'height') {
+                    $(this).css('height', height);
+                } else {
+                    $(this).css('min-height', height);
+                }
+            });
+
+            if (parent.attr('data-related')) {
+                $(parent.attr('data-related')).css('height', parent.height());
+            }
+        });
+    }
+});
 
 
 

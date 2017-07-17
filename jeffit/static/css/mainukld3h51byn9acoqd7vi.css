@@ -1256,6 +1256,59 @@ iframe[name=google_conversion_frame] {
   visibility: hidden;
 }
 
+.screenbox {
+  position: absolute;
+  width: 720px;
+  height: 395px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  left: 50%;
+  top: 0;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 1200px) {
+  .screenbox {
+    width: 510px;
+    height: 290px;
+  }
+}
+
+@media (max-width: 991px) {
+  .screenbox {
+    display: none;
+  }
+}
+
+.screenbox img {
+  position: absolute;
+  top: 18.2%;
+  left: 18.7%;
+  width: 58.6%;
+  height: 68%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 1200px) {
+  .screenbox img {
+    left: 19.7%;
+    width: 60.6%;
+  }
+}
+
+@media (min-width: 991px) {
+  .c-diagram_top_40 {
+    margin-top: 40px !important;
+  }
+}
+
 .bg-fixed {
   position: fixed;
   top: 65px;
@@ -1294,6 +1347,38 @@ iframe[name=google_conversion_frame] {
   -o-object-fit: cover;
      object-fit: cover;
   width: 0;
+}
+
+@media (min-width: 991px) {
+  .crm-page .point-1 {
+    position: absolute;
+    left: 0;
+    top: 30px;
+  }
+}
+
+@media (min-width: 991px) {
+  .crm-page .point-2 {
+    position: absolute;
+    right: -30px;
+    top: 0;
+  }
+}
+
+@media (min-width: 991px) {
+  .crm-page .point-3 {
+    position: absolute;
+    left: 0;
+    bottom: 85px;
+  }
+}
+
+@media (min-width: 991px) {
+  .crm-page .point-4 {
+    position: absolute;
+    right: -30px;
+    bottom: 125px;
+  }
 }
 
 @media (min-width: 1024px) {
