@@ -500,7 +500,7 @@ $(document).ready(function () {
 
         elementsInit: function () {
             this.$referrer = $('#referrer');
-            $('.js-buy-form, .js-trial-form, .feedback__form, .demoRequest__form, .onlineDemo__form, .liveDemo__form, .js-additional-services-form')
+            $('.js-buy-form, .js-trial-form, .feedback__form, .demoRequest__form, .onlineDemo__form, .liveDemo__form, .presentation__form, .js-additional-services-form')
                 .submit($.proxy(this.onSubmit, this));
         },
 
@@ -630,6 +630,19 @@ $(document).ready(function () {
                     // form.find('[name="msg"]').val(this.formatBuyCommentary());
                 } else if (form.data('type') === 'contact') {
                     form.find('[name="msg"]').val(form.find('[name="comment"]').val());
+                } else if (form.data('type') === 'presentation') {
+                    extra.lead = extra.lead || {};
+                    extra.lead.name = 'Смотреть презентацию';
+                    localStorage['presentation'] = true;
+
+                    var presentation = localStorage['presentation'];
+                    if (presentation) {
+                      var newhref = $("[data-target='#presentationModal']").data('file');
+                      $("[data-target='#presentationModal']").attr("href", newhref).attr("target", "blank").removeAttr("data-target").removeAttr("data-toggle").click();
+                      setTimeout(function(){
+                        $('[href="' + newhref + '"]')[0].click();
+                      }, 1000);
+                    }
                 }
                 if (form.hasClass('js-additional-services-form')) {
                     var space = 'Дополнительное пространство: ' + form.find('[name="space"]').val();
@@ -641,7 +654,11 @@ $(document).ready(function () {
                     extra.lead.name = 'Попробовать бесплатно';
                     extra.lead.trial = true;
                     extra.lead.address = domain + '.jeffit.ru';
+                    extra.lead.tags = 'Trial';
                     // form.find('[name="msg"]').val('Компания(название домена): ' + domain);
+                }
+                if (form.hasClass('.liveDemo__form')) {
+                  extra.lead.tags = 'Skype';
                 }
                 this.demoRequest = form.hasClass('demoRequest__form') || form.hasClass('onlineDemo__form');
                 var cb = (!current || !next) ? null : function () {
@@ -873,7 +890,16 @@ $(document).ready(function () {
     $('.trysuggest__contrast').mouseenter(function () {
         $('.trysuggest__contrast-block').fadeIn();
     });
+
     $('.trysuggest__contrast-block').mouseleave(function () {
         $(this).fadeOut();
     });
+
+    var presentation = localStorage['presentation'];
+    if (presentation) {
+        var newhref = $('[data-target="#presentationModal"]').data('file');
+        $('[data-target="#presentationModal"]').attr('href', newhref).attr('target', 'blank').removeAttr('data-target').removeAttr('data-toggle');
+    }
+
 });
+
