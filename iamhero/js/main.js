@@ -359,3 +359,76 @@ $('.video__youtube-link').click(function (event) {
     videoblockVip.find('iframe').attr('src', src + videoVip + '?autoplay=1');
   }, 250);
 });
+
+// Form validation
+var errorsAmount = 0,
+    errorMessage,
+    inputVal;
+
+function addError(el) {
+  el.parents('label').addClass('error');
+  el.parents('label').removeClass('validated');
+  el.parents('label').find('.errortext').text(errorMessage).show();
+}
+
+function removeError(el) {
+  el.parents('label').removeClass('error');
+  el.parents('label').addClass('validated');
+  el.parents('label').find('.errortext').text('').hide();
+}
+
+function countErrors(el) {
+  errorsAmount = el.find('.error').length;
+}
+
+function errorCheck(el) {
+  inputVal = el.val();
+  errorMessage = '';
+
+  if ( el.attr('type') === 'name' ) {
+    if (inputVal.length < 3) { errorMessage = 'Come on! You can’t be serious'; }
+  }
+
+  if ( el.attr('type') === 'email' ) {
+    if (inputVal.length < 6) { errorMessage = 'Come on! You can’t be serious'; }
+  }
+
+  if ( el.attr('type') === 'tel' ) {
+    if (inputVal.length < 8) { errorMessage = 'Come on! You can’t be serious'; }
+  }
+
+  if ( el.attr('type') === 'password' ) {
+    if (inputVal.length < 8) { errorMessage = 'Password must be at least 8 symbols long'; }
+  }
+
+  if ( el.attr('placeholder') === 'Subject' ) {
+    if (inputVal.length < 4) { errorMessage = 'Please write your subject'; }
+  }
+
+  if ( el.attr('placeholder') === 'Message' ) {
+    if (inputVal.length < 10) { errorMessage = 'Please write your message'; }
+  }
+
+  if (errorMessage.length > 0) {
+    addError(el);
+  } else {
+    removeError(el);
+  }
+}
+
+$('form').submit(function(e){
+
+  $(this).find('input[data-required], textarea[data-required]').each(function(){
+    errorCheck($(this));
+  });
+
+  countErrors($(this));
+
+  if (errorsAmount > 0) {
+    return false;
+  }
+});
+
+$('input[data-required], textarea[data-required]').on('change keyup', function(){
+  errorCheck($(this));
+});
