@@ -5500,11 +5500,15 @@ textarea {
   .notfound__text{
     padding: 156px 30px 233px;
     width: 480px; }
+  .tour-info-resume{
+    margin-top: -100px; }
+  .tour-info-resume{
+    margin-top: 0; }
   .tour-info-resume__container{
     -webkit-align-items: flex-end;
     -ms-flex-align: end;
     align-items: flex-end;
-    padding-top: 45%; }
+    padding-top: 300px; }
   .tour-user-score__container{
     -webkit-align-items: flex-end;
     -ms-flex-align: end;
@@ -7406,8 +7410,12 @@ textarea {
   .notfound__btn{
     padding: 8px 62px;
     border-radius: 50px; }
+  .tour-info-resume__container{
+    padding-top: 100px; }
   .tour-user-score__container{
-    padding-top: 0; } }
+    padding-top: 0; }
+  .tour-user-score__bg{
+    width: 80%; } }
   @media (min-width: 1921px){
   .lead__item_hero.js-hero-hover-active{
     padding-right: calc(9.5px + 130px); }
