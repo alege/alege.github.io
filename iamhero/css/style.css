@@ -58,6 +58,24 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 *:focus {
   outline: none; }
 
+form label {
+  position: relative; }
+  form label.error > input, form label.error > textarea {
+    border-color: #e64418; }
+  form label.validated > input, form label.validated > textarea {
+    border-color: #39d3a9; }
+  form label .errortext {
+    position: absolute;
+    letter-spacing: -.04em;
+    font-weight: 700;
+    color: #df4116;
+    font-size: 14px;
+    width: 100%;
+    top: 105%;
+    text-align: right;
+    right: 18px;
+    line-height: 1.2em; }
+
 ::-moz-selection {
   background: #25ffc4;
   color: white; }
@@ -2968,17 +2986,6 @@ textarea {
 
 .form {
   width: 100%; }
-  .form .errortext {
-    position: absolute;
-    letter-spacing: -.04em;
-    font-weight: 700;
-    color: #df4116;
-    font-size: 14px;
-    width: 100%;
-    top: 105%;
-    text-align: right;
-    right: 18px;
-    line-height: 1.2em; }
   .form__container {
     box-sizing: border-box;
     display: -webkit-flex;
@@ -3046,12 +3053,7 @@ textarea {
     padding: 0;
     margin: 0;
     line-height: 1.2em;
-    text-align: left;
-    position: relative; }
-    .form label.error > input {
-      border-color: #e64418; }
-    .form label.validated > input {
-      border-color: #39d3a9; }
+    text-align: left; }
   .form input:focus,
   .form textarea:focus,
   .form input:active,
@@ -4058,26 +4060,10 @@ textarea {
   .contacts__feedback-form {
     margin-bottom: 48px; }
   .contacts__form-element {
-    position: relative;
     box-sizing: border-box;
     width: 100%;
     margin-bottom: 25px;
     text-align: center; }
-    .contacts__form-element.error > input, .contacts__form-element.error > textarea {
-      border-color: #e64418; }
-    .contacts__form-element.validated > input, .contacts__form-element.validated > textarea {
-      border-color: #39d3a9; }
-    .contacts__form-element .errortext {
-      position: absolute;
-      letter-spacing: -.04em;
-      font-weight: 700;
-      color: #df4116;
-      font-size: 14px;
-      width: 100%;
-      top: 105%;
-      text-align: right;
-      right: 18px;
-      line-height: 1.2em; }
     .contacts__form-element.col-3 {
       width: 30%; }
     .contacts__form-element input {
@@ -4545,26 +4531,10 @@ textarea {
   .contacts__feedback-form {
     margin-bottom: 48px; }
   .contacts__form-element {
-    position: relative;
     box-sizing: border-box;
     width: 100%;
     margin-bottom: 25px;
     text-align: center; }
-    .contacts__form-element.error > input, .contacts__form-element.error > textarea {
-      border-color: #e64418; }
-    .contacts__form-element.validated > input, .contacts__form-element.validated > textarea {
-      border-color: #39d3a9; }
-    .contacts__form-element .errortext {
-      position: absolute;
-      letter-spacing: -.04em;
-      font-weight: 700;
-      color: #df4116;
-      font-size: 14px;
-      width: 100%;
-      top: 105%;
-      text-align: right;
-      right: 18px;
-      line-height: 1.2em; }
     .contacts__form-element.col-3 {
       width: 30%; }
     .contacts__form-element input {
