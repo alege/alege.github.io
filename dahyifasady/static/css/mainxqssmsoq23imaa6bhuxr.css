@@ -53,6 +53,9 @@ p {
   -o-object-fit: contain;
      object-fit: contain;
 }
+.cbp-l-project-details-list strong {
+  margin-right: 10px;
+}
 .cbp-l-filters-dropdownWrap {
   width: 280px;
 }
@@ -111,7 +114,7 @@ p {
   position: absolute;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  left: 50%;
+  left: calc(50% - 20px);
   bottom: 20px;
   font-size: 40px;
   color: #fff;
@@ -120,6 +123,9 @@ p {
 }
 [data-scroll] {
   cursor: pointer;
+}
+.html5vid video {
+  height: 100%;
 }
 .about-material {
   display: -webkit-box;
