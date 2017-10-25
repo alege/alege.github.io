@@ -110,6 +110,11 @@ p {
   max-height: 100%;
   margin-right: 10px;
 }
+.c-layout-revo-slider {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
 .scroll-indicator {
   position: absolute;
   -webkit-transform: translateX(-50%);
