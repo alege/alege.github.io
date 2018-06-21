@@ -1,6 +1,5 @@
 window.onload = () => {
-  // const API_BASE = 'https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/5aee267cbef6f58dda604d779448ad90/';
-  const API_BASE = 'https://api.darksky.net/forecast/5aee267cbef6f58dda604d779448ad90/';
+  const API_BASE = 'https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/5aee267cbef6f58dda604d779448ad90/';
   const locations = [
     {
       "title": "Lviv",
