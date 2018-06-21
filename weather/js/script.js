@@ -67,7 +67,7 @@ window.onload = () => {
       if (this.readyState == 4 && this.status == 200) {
         // Typical action to be performed when the document is ready:
         const response = JSON.parse(this.responseText);
-        console.log(response);
+        // console.log(response);
         const info = response.daily.summary;
         const temp = response.currently.apparentTemperature.toFixed(0);
         const icon = response.currently.icon;
