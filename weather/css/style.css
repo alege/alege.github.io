@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Raleway');
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+body, p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+  font-size: 3vw;
+  font-family: 'Raleway', sans-serif;
+}
+
+#app {
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-delay: .7s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bg-image {
+  position: relative;
+  overflow: hidden;
+  display: block;
+}
+
+.bg-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  object-fit: cover;
+  width: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.weather-item {
+  position: relative;
+  border-radius: 5px;
+  width: 50%;
+  height: 100vh;
+  min-height: 300px;
+  color: #fff;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+}
+
+.weather-item .bg-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.weather-item .bg-image::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .45);
+}
+
+.weather-item__info {
+  position: relative;
+  margin-top: auto;
+  padding: 8% 5%;
+  text-align: center;
+  width: 100%;
+}
+
+.weather-item__info h2 {
+  margin-bottom: 10px;
+}
+
+.weather-item__status {
+  position: absolute;
+  right: 3%;
+  top: 3%;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+}
+
+.weather-item__status h3 {
+  margin-right: 10px;
+}
+
+@media (max-width: 640px) {
+  .weather-item__status {
+    top: auto;
+    right: auto;
+    bottom: 5%;
+    transform: translatex(-50%);
+    left: 50%;
+  }
+
+  .weather-item__info {
+    margin-top: 0;
+  }
+
+  h2 {
+    font-size: 5vw;
+  }
+
+  .weather-item {
+    width: 100%;
+  }
+}
