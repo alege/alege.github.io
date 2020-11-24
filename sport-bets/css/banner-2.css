@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  user-select: none;
+}
+
+.content {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content__logo {
+  margin-bottom: 20px;
+}
+
+.frame {
+  position: relative;
+  width: 950px;
+}
+
+.frame__main {
+  width: 100%;
+}
+
+@keyframes glow {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.3;
+  }
+  
+  100% {
+    opacity: 1;
+  }
+}
+
+.frame__lights {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 49%;
+  left: 50%;
+  width: 115%;
+  height: 111%;
+  object-fit: contain;
+  animation: glow 2s ease-in-out infinite;
+}
+
+.frame__text {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+}
+
+.content__button {
+  position: relative;
+  display: inline-block;
+}
+
+.content__button-texture {
+  width: 100%;
+}
+
+.content__button-glow {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  left: 50%;
+  top: 49%;
+  animation: glow 2s ease-in-out infinite;
+}
+
+@media (max-width: 1800px) {
+  .frame {
+    width: 630px;
+  }
+
+  .frame__text {
+    width: 80%;
+  }
+
+  .content__logo {
+    width: 100px;
+    margin-bottom: 10px;
+  }
+
+  .content__button {
+    width: 240px;
+    margin-top: -20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .frame {
+    width: 90%;
+  }
+
+  .content__logo {
+    width: 22%;
+  }
+
+  .content__button {
+    width: 60%;
+    margin-top: 0;
+  }
+}
+
+@media (orientation: landscape) and (max-width: 992px) {
+  .content__logo {
+    width: 7%;
+  }
+
+  .frame {
+    width: 39%;
+  }
+
+  .content__button {
+    margin-top: 0;
+    width: 19%;
+  }
+}
